@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | WRISTERY Luxury Watches</title>
+    <link rel="icon" type="image/png" href="../Image/Logo.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- About CSS -->
+    <link rel="stylesheet" href="../CSS/about.css">
+
+</head>
+
+<body>
+
+    <!-- =================================
+         ANNOUNCEMENT BAR
+    ================================== -->
+<div class="announcement-bar">
+
+    <div class="announcement-track">
+
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+
+        <div class="announcement-group" aria-hidden="true">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+
+        <div class="announcement-group" aria-hidden="true">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+    </div>
+
+</div>
+
+
+
+    <!-- =================================
+         WRISTERY HEADER
+    ================================== -->
+
+    <header class="wristery-header">
+
+        <div class="header-container">
+
+            <!-- LEFT MENU -->
+            <div class="header-left">
+
+                <button class="menu-button"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#wristeryMenu">
+
+                    <i class="bi bi-list"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- CENTER LOGO -->
+            <a href="" class="wristery-logo">
+
+                <img src="../Image/Logo.png" alt="WRISTERY Logo">
+
+            </a>
+
+
+                 
+<!-- RIGHT: HEADER ICONS -->
+<div class="header-icons">
+
+    <!-- SEARCH ICON -->
+    <button class="header-icon"
+        type="button"
+        id="searchButton"
+        aria-label="Search"
+        title="Search">
+
+        <i class="bi bi-search"></i>
+    </button>
+
+    <!-- PERSON ICON: OPEN SIGNUP PAGE -->
+    <a href="./signup.html"
+        class="header-icon"
+        aria-label="Sign Up"
+        title="Sign Up">
+
+        <i class="bi bi-person"></i>
+    </a>
+
+    <!-- SHOPPING BAG -->
+  
+<a href="./Cart.html" class="header-icon" aria-label="Shopping Bag" title="Shopping bag">
+    <i class="bi bi-bag"></i>
+    <span class="cart-count">0</span>
+</a>
+
+
+</div>
+
+        </div>
+    </header>
+    <!-- HEADER END -->
+<!-- WRISTERY SEARCH PANEL -->
+<div class="wristery-search-panel" id="searchPanel">
+
+    <form id="searchForm" class="search-form">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search watches, collections..."
+            autocomplete="off"
+            aria-label="Search WRISTERY">
+
+        <button type="submit" aria-label="Submit Search">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <button type="button" id="closeSearch" aria-label="Close Search">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+    </form>
+
+    <div class="search-results" id="searchResults"></div>
+
+</div>
+
+
+
+    <!-- =================================
+         SIDEBAR
+    ================================== -->
+
+    <div class="offcanvas offcanvas-start wristery-menu"
+        tabindex="-1"
+        id="wristeryMenu">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title">WRISTERY</h5>
+
+            <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <p class="menu-subtitle">
+                DISCOVER OUR WORLD
+            </p>
+
+            <nav class="menu-links">
+
+                <a href="./Index.html">
+                    <i class="bi bi-house"></i>
+                    Home
+                </a>
+
+                <a href="./about.html" class="active">
+                    <i class="bi bi-info-circle"></i>
+                    About Us
+                </a>
+              <!-- CATEGORIES -->
+<div class="category-menu">
+
+    <button class="category-toggle" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#watchCategories"
+        aria-expanded="false"
+        aria-controls="watchCategories">
+
+        <span class="category-label">
+            <i class="bi bi-watch"></i>
+            Categories
+        </span>
+
+        <i class="bi bi-chevron-down category-arrow"></i>
+
+    </button>
+
+    <div class="collapse" id="watchCategories">
+
+        <div class="subcategory-links">
+
+            <a href="./Menwatches.html">Men Watches</a>
+
+            <a href="./Womanwatches.html">Women Watches</a>
+
+            <a href="./Couplewatches.html">Couple Watches</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+                <a href="./Gallery.html">
+                    <i class="bi bi-images"></i>
+                    Gallery
+                </a>
+
+                <a href="./Store Locator.html">
+                    <i class="bi bi-geo-alt"></i>
+                    Store Locator
+                </a>
+
+                <a href="./Support.html">
+                    <i class="bi bi-headset"></i>
+                    Support
+                </a>
+
+                <a href="./Contact.html">
+                    <i class="bi bi-envelope"></i>
+                    Contact Us
+                </a>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+    <aside class="offcanvas offcanvas-end shopping-bag"
+        tabindex="-1"
+        id="shoppingBag"
+        aria-labelledby="shoppingBagTitle">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="shoppingBagTitle">Your Bag</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close shopping bag"></button>
+        </div>
+        <div class="offcanvas-body">
+            <section class="shopping-bag-view" id="shoppingBagView">
+                <div class="shopping-bag-items" id="shoppingBagItems" aria-live="polite"></div>
+                <div class="shopping-bag-summary">
+                    <div class="shopping-bag-subtotal">
+                        <span>Subtotal</span>
+                        <strong id="shoppingBagSubtotal">PKR 0</strong>
+                    </div>
+                    <p>Shipping and taxes calculated at checkout.</p>
+                    <button class="checkout-button" id="proceedToCheckout" type="button" disabled>Proceed to checkout</button>
+                </div>
+            </section>
+            <section class="checkout-view" id="checkoutView" hidden>
+                <button class="checkout-back" id="backToBag" type="button"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to bag</button>
+                <form id="orderForm">
+                    <h3>Order details</h3>
+                    <label for="customerName">Full name</label>
+                    <input id="customerName" name="customerName" autocomplete="name" required>
+                    <label for="customerPhone">Phone number</label>
+                    <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" required>
+                    <label for="customerEmail">Email address</label>
+                    <input id="customerEmail" name="customerEmail" type="email" autocomplete="email" required>
+                    <label for="deliveryAddress">Delivery address</label>
+                    <textarea id="deliveryAddress" name="deliveryAddress" autocomplete="street-address" rows="3" required></textarea>
+                    <div class="checkout-review">
+                        <h4>Order total</h4>
+                        <div id="checkoutOrderLines"></div>
+                        <div class="shopping-bag-subtotal"><span>Total</span><strong id="checkoutTotal">PKR 0</strong></div>
+                    </div>
+                    <button class="checkout-button" type="submit">Confirm order</button>
+                </form>
+            </section>
+            <section class="order-confirmation" id="orderConfirmation" aria-live="polite" hidden>
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                <h3>Order confirmed</h3>
+                <p id="orderConfirmationMessage"></p>
+                <button class="checkout-button" type="button" data-bs-dismiss="offcanvas">Continue shopping</button>
+            </section>
+        </div>
+    </aside>
+
+
+    <!-- =================================
+         ABOUT HERO SECTION
+    ================================== -->
+
+    <section class="about-hero">
+
+        <div class="about-hero-content">
+
+            <span>THE WORLD OF WRISTERY</span>
+
+            <h1>
+                A Legacy of
+                <span>Timeless Elegance</span>
+            </h1>
+
+            <p>
+                Where every second reflects luxury,
+                craftsmanship and individuality.
+            </p>
+
+            <a href="#our-story" class="hero-button">
+                EXPLORE OUR STORY
+                <i class="bi bi-arrow-down"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         BRAND INTRODUCTION
+    ================================== -->
+
+    <section class="about-intro" id="our-story">
+
+        <div class="intro-heading">
+
+            <span>OUR STORY</span>
+
+            <h2>
+                More Than Just Watches —
+                <br>
+                It's a Legacy.
+            </h2>
+
+            <div class="gold-line"></div>
+
+            <p>
+                Every great moment deserves to be remembered.
+                At WRISTERY, we believe that a watch is more
+                than just a timekeeping accessory. It is a
+                symbol of confidence, elegance and personal style.
+            </p>
+
+        </div>
+
+
+        <div class="intro-image">
+
+            <img src="../Image/Gallery pic 01.jpeg"
+                alt="WRISTERY Watch Collection">
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         OUR BRAND STORY
+    ================================== -->
+
+    <section class="brand-story">
+
+        <div class="brand-story-container">
+
+            <div class="brand-story-image">
+
+                <img src="../Image/Product pic 01.jpeg"
+                    alt="Luxury Watch Craftsmanship">
+
+            </div>
+
+
+            <div class="brand-story-content">
+
+                <span>THE ART OF TIME</span>
+
+                <h2>
+                    Designed for Those
+                    Who Value Every Moment.
+                </h2>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    WRISTERY represents the beauty of timeless
+                    design and the confidence that comes with
+                    wearing something truly special.
+                </p>
+
+                <p>
+                    Our collection brings together elegant
+                    aesthetics and distinctive details to
+                    complement your lifestyle. Whether you
+                    prefer classic sophistication or modern
+                    luxury, there is a style for every moment.
+                </p>
+
+                <p>
+                    We believe true elegance never goes out
+                    of style.
+                </p>
+
+                <a href="Gallery.html" class="about-button">
+                    EXPLORE OUR GALLERY
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         VISION AND MISSION
+    ================================== -->
+
+    <section class="vision-section">
+
+        <div class="vision-heading">
+
+            <span>WHAT DRIVES US</span>
+
+            <h2>Our Vision & Mission</h2>
+
+            <p>
+                Our passion is creating an experience
+                where luxury meets timeless style.
+            </p>
+
+        </div>
+
+
+        <div class="vision-container">
+
+            <div class="vision-card">
+
+                <div class="vision-icon">
+                    <i class="bi bi-eye"></i>
+                </div>
+
+                <h3>Our Vision</h3>
+
+                <p>
+                    To become a symbol of timeless elegance
+                    by bringing sophisticated watch styles
+                    to people who appreciate quality and design.
+                </p>
+
+            </div>
+
+
+            <div class="vision-card">
+
+                <div class="vision-icon">
+                    <i class="bi bi-gem"></i>
+                </div>
+
+                <h3>Our Mission</h3>
+
+                <p>
+                    To offer distinctive timepieces that
+                    celebrate individuality, confidence
+                    and the beauty of every moment.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         WHY CHOOSE WRISTERY
+    ================================== -->
+
+    <section class="why-wristery">
+
+        <div class="why-heading">
+
+            <span>THE WRISTERY DIFFERENCE</span>
+
+            <h2>Why Choose WRISTERY?</h2>
+
+            <p>
+                Discover the details that make every
+                WRISTERY experience special.
+            </p>
+
+        </div>
+
+
+        <div class="why-container">
+
+            <div class="why-card">
+
+                <i class="bi bi-gem"></i>
+
+                <h3>Elegant Designs</h3>
+
+                <p>
+                    Beautiful watch designs that bring
+                    sophistication to your everyday style.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <i class="bi bi-clock-history"></i>
+
+                <h3>Timeless Style</h3>
+
+                <p>
+                    Classic and modern aesthetics that
+                    remain stylish through every moment.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <i class="bi bi-stars"></i>
+
+                <h3>Attention to Detail</h3>
+
+                <p>
+                    Distinctive details and thoughtful
+                    design make every timepiece special.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         LUXURY BANNER
+    ================================== -->
+
+    <section class="about-banner">
+
+        <div class="about-banner-content">
+
+            <span>MAKE EVERY SECOND COUNT</span>
+
+            <h2>
+                Your Time.
+                Your Style.
+                Your Legacy.
+            </h2>
+
+            <p>
+                Discover a collection that speaks
+                the language of timeless elegance.
+            </p>
+
+            <a href="index.html#Collections" class="banner-button">
+                DISCOVER OUR COLLECTION
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+   
+<!-- =====================================
+     WRISTERY FOOTER
+====================================== -->
+
+<footer class="wristery-footer">
+    <div class="footer-content">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="./Index.html" class="footer-logo">WRISTERY</a>
+                <p class="footer-tagline">TIMELESS STYLE. A LEGACY ON YOUR WRIST.</p>
+                <p class="footer-description">
+                    More than a watch, it's a statement of who you are.
+                    Discover timeless designs crafted for those who value
+                    elegance, confidence, and distinction.
+                </p>
+            </div>
+
+            <nav class="footer-column" aria-label="Explore">
+                <h2 class="footer-column-title">Explore</h2>
+                <div class="footer-column-links">
+                    <a href="./Index.html">Home</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./Gallery.html">Gallery</a>
+                    <a href="./Store Locator.html">Store Locator</a>
+                </div>
+            </nav>
+
+            <nav class="footer-column" aria-label="Collections">
+                <h2 class="footer-column-title">Collections</h2>
+                <div class="footer-column-links">
+                    <a href="./Menwatches.html">Men's Watches</a>
+                    <a href="./Womanwatches.html">Women's Watches</a>
+                    <a href="./Couplewatches.html">Couple Watches</a>
+                </div>
+            </nav>
+
+            <nav class="footer-column" aria-label="Customer care">
+                <h2 class="footer-column-title">Customer Care</h2>
+                <div class="footer-column-links">
+                    <a href="./Support.html">Support</a>
+                    <a href="./Contact.html">Contact Us</a>
+                    <a href="./Cart.html">Shopping Bag</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; <span id="year"></span> WRISTERY. CRAFTED FOR TIMELESS ELEGANCE.
+            </p>
+            <p class="footer-note">Every second tells your story.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- SHOPPING BAG -->
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const cartItems = document.getElementById("shoppingBagItems");
+            const cartSubtotal = document.getElementById("shoppingBagSubtotal");
+            const checkoutButton = document.getElementById("proceedToCheckout");
+            const shoppingBagView = document.getElementById("shoppingBagView");
+            const checkoutView = document.getElementById("checkoutView");
+            const checkoutLines = document.getElementById("checkoutOrderLines");
+            const checkoutTotal = document.getElementById("checkoutTotal");
+            const orderForm = document.getElementById("orderForm");
+            const orderConfirmation = document.getElementById("orderConfirmation");
+
+            function loadCart() {
+                try {
+                    const savedCart = JSON.parse(localStorage.getItem("wristeryCart")) || [];
+                    return Array.isArray(savedCart) ? savedCart : [];
+                } catch (error) {
+                    return [];
+                }
+            }
+
+            let cart = loadCart();
+
+            function formatCurrency(amount) {
+                return "PKR " + amount.toLocaleString("en-PK", { useGrouping: false, maximumFractionDigits: 0 });
+            }
+
+            function getItemPrice(item) {
+                const priceText = String(item.price).replace(/,/g, "");
+                const priceMatch = priceText.match(/\d+(?:\.\d+)?/);
+                const price = typeof item.price === "number" ? item.price : Number(priceMatch && priceMatch[0]);
+                return Number.isFinite(price) ? price : 0;
+            }
+
+            function getCartTotal() {
+                return cart.reduce(function (total, item) {
+                    return total + getItemPrice(item) * (Number(item.quantity) || 0);
+                }, 0);
+            }
+
+            function renderCheckoutReview() {
+                checkoutLines.replaceChildren();
+                cart.forEach(function (item) {
+                    const quantity = Number(item.quantity) || 0;
+                    const line = document.createElement("p");
+                    line.textContent = (item.name || "Watch") + " × " + quantity + "  " +
+                        formatCurrency(getItemPrice(item) * quantity);
+                    checkoutLines.appendChild(line);
+                });
+                checkoutTotal.textContent = formatCurrency(getCartTotal());
+            }
+
+            function renderCart() {
+                const count = cart.reduce(function (total, item) {
+                    return total + (Number(item.quantity) || 0);
+                }, 0);
+                document.querySelectorAll(".cart-count").forEach(function (badge) {
+                    badge.textContent = count;
+                });
+                cartItems.replaceChildren();
+
+                if (cart.length === 0) {
+                    const emptyMessage = document.createElement("p");
+                    emptyMessage.className = "shopping-bag-empty";
+                    emptyMessage.textContent = "Your bag is empty.";
+                    cartItems.appendChild(emptyMessage);
+                }
+
+                cart.forEach(function (item, index) {
+                    const quantity = Number(item.quantity) || 0;
+                    const priceValue = getItemPrice(item);
+                    const lineTotal = priceValue * quantity;
+                    const row = document.createElement("article");
+                    row.className = "shopping-bag-item";
+
+                    const image = document.createElement("img");
+                    image.src = item.image || "";
+                    image.alt = item.name || "Watch";
+
+                    const details = document.createElement("div");
+                    details.className = "shopping-bag-item-details";
+                    const name = document.createElement("h3");
+                    name.textContent = item.name || "Watch";
+                    const price = document.createElement("p");
+                    price.textContent = formatCurrency(priceValue) + " each";
+                    const lineTotalLabel = document.createElement("p");
+                    lineTotalLabel.className = "shopping-bag-line-total";
+                    lineTotalLabel.textContent = "Item total: " + formatCurrency(lineTotal);
+
+                    const controls = document.createElement("div");
+                    controls.className = "shopping-bag-quantity";
+                    const decrease = document.createElement("button");
+                    decrease.type = "button";
+                    decrease.textContent = "−";
+                    decrease.setAttribute("aria-label", "Decrease quantity of " + name.textContent);
+                    decrease.addEventListener("click", function () {
+                        if (quantity <= 1) cart.splice(index, 1);
+                        else cart[index].quantity = quantity - 1;
+                        saveCart();
+                    });
+
+                    const quantityLabel = document.createElement("span");
+                    quantityLabel.textContent = quantity;
+                    const increase = document.createElement("button");
+                    increase.type = "button";
+                    increase.textContent = "+";
+                    increase.setAttribute("aria-label", "Increase quantity of " + name.textContent);
+                    increase.addEventListener("click", function () {
+                        cart[index].quantity = quantity + 1;
+                        saveCart();
+                    });
+
+                    const remove = document.createElement("button");
+                    remove.type = "button";
+                    remove.className = "shopping-bag-remove";
+                    remove.textContent = "Remove";
+                    remove.addEventListener("click", function () {
+                        cart.splice(index, 1);
+                        saveCart();
+                    });
+
+                    controls.append(decrease, quantityLabel, increase, remove);
+                    details.append(name, price, lineTotalLabel, controls);
+                    row.append(image, details);
+                    cartItems.appendChild(row);
+                });
+
+                cartSubtotal.textContent = formatCurrency(getCartTotal());
+                checkoutButton.disabled = cart.length === 0;
+                renderCheckoutReview();
+            }
+
+            function saveCart() {
+                localStorage.setItem("wristeryCart", JSON.stringify(cart));
+                renderCart();
+            }
+
+            checkoutButton.addEventListener("click", function () {
+                if (cart.length === 0) return;
+                shoppingBagView.hidden = true;
+                checkoutView.hidden = false;
+                orderConfirmation.hidden = true;
+                renderCheckoutReview();
+                document.getElementById("customerName").focus();
+            });
+
+            document.getElementById("backToBag").addEventListener("click", function () {
+                checkoutView.hidden = true;
+                shoppingBagView.hidden = false;
+            });
+
+            orderForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                if (!orderForm.reportValidity() || cart.length === 0) return;
+
+                const orderNumber = "WR-" + Date.now().toString().slice(-8);
+                const customerName = document.getElementById("customerName").value.trim();
+                const orderTotal = getCartTotal();
+                localStorage.setItem("wristeryLastOrder", JSON.stringify({
+                    orderNumber: orderNumber,
+                    customerName: customerName,
+                    customerPhone: document.getElementById("customerPhone").value.trim(),
+                    customerEmail: document.getElementById("customerEmail").value.trim(),
+                    deliveryAddress: document.getElementById("deliveryAddress").value.trim(),
+                    items: cart,
+                    total: orderTotal,
+                    createdAt: new Date().toISOString()
+                }));
+                document.getElementById("orderConfirmationMessage").textContent =
+                    "Thank you, " + customerName + ". Order " + orderNumber +
+                    " is confirmed for " + formatCurrency(orderTotal) + ".";
+                cart = [];
+                saveCart();
+                orderForm.reset();
+                shoppingBagView.hidden = true;
+                checkoutView.hidden = true;
+                orderConfirmation.hidden = false;
+            });
+
+            document.getElementById("shoppingBag").addEventListener("hidden.bs.offcanvas", function () {
+                shoppingBagView.hidden = false;
+                checkoutView.hidden = true;
+                orderConfirmation.hidden = true;
+            });
+
+            window.addEventListener("storage", function (event) {
+                if (event.key === "wristeryCart") {
+                    cart = loadCart();
+                    renderCart();
+                }
+            });
+
+            renderCart();
+
+        });
+
+// =====================================
+// WRISTERY SEARCH FUNCTIONALITY
+// =====================================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const searchButton = document.getElementById("searchButton");
+    const searchPanel = document.getElementById("searchPanel");
+    const searchInput = document.getElementById("searchInput");
+    const searchForm = document.getElementById("searchForm");
+    const searchResults = document.getElementById("searchResults");
+    const closeSearch = document.getElementById("closeSearch");
+
+    // CHECK SEARCH ELEMENTS
+    if (!searchButton || !searchPanel || !searchInput ||
+        !searchForm || !searchResults || !closeSearch) {
+        console.error("WRISTERY Search elements not found!");
+        return;
+    }
+
+    // WEBSITE PAGES
+    const pages = [
+        { name: "Men Watches", keywords: ["men", "man", "mens"], url: "Menwatches.html" },
+        { name: "Women Watches", keywords: ["women", "woman", "ladies"], url: "Womanwatches.html" },
+        { name: "Couple Watches", keywords: ["couple", "matching"], url: "Couplewatches.html" },
+        { name: "Home", keywords: ["home", "homepage"], url: "index.html" },
+        { name: "About Us", keywords: ["about", "story"], url: "about.html" },
+        { name: "Gallery", keywords: ["gallery", "photos"], url: "gallery.html" },
+        { name: "Store Locator", keywords: ["store", "location"], url: "Store Locator.html" },
+        { name: "Support", keywords: ["support", "help"], url: "support.html" },
+        { name: "Contact Us", keywords: ["contact"], url: "Contact.html" }
+    ];
+
+    // OPEN SEARCH PANEL
+    searchButton.addEventListener("click", function () {
+
+        const isOpen = searchPanel.style.display === "block";
+
+        searchPanel.style.display = isOpen ? "none" : "block";
+
+        if (!isOpen) {
+            searchInput.focus();
+        } else {
+            searchInput.value = "";
+            searchResults.innerHTML = "";
+        }
+
+    });
+
+    // CLOSE SEARCH PANEL
+    closeSearch.addEventListener("click", function () {
+
+        searchPanel.style.display = "none";
+        searchInput.value = "";
+        searchResults.innerHTML = "";
+
+    });
+
+    // SEARCH FUNCTION
+    function searchPages(value) {
+
+        const query = value.toLowerCase().trim();
+
+        searchResults.innerHTML = "";
+
+        if (query === "") {
+            return [];
+        }
+
+        const results = pages.filter(function (page) {
+
+            return page.name.toLowerCase().includes(query) ||
+                page.keywords.some(function (keyword) {
+                    return keyword.includes(query);
+                });
+
+        });
+
+        if (results.length > 0) {
+
+            results.forEach(function (page) {
+
+                const link = document.createElement("a");
+
+                link.href = page.url;
+                link.textContent = page.name;
+
+                searchResults.appendChild(link);
+
+            });
+
+        } else {
+
+            const message = document.createElement("p");
+            message.textContent = "No results found. Please try another search.";
+
+            searchResults.appendChild(message);
+
+        }
+
+        return results;
+    }
+
+    // SHOW RESULTS WHILE TYPING
+    searchInput.addEventListener("input", function () {
+        searchPages(searchInput.value);
+    });
+
+    // SEARCH FORM SUBMIT
+    searchForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const results = searchPages(searchInput.value);
+
+        if (results.length > 0) {
+            window.location.href = results[0].url;
+        }
+
+    });
+
+});
+
+
+
+// =====================================
+// WRISTERY SIDEBAR PAGE ADJUSTMENT
+// =====================================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const sidebar = document.getElementById("wristeryMenu");
+
+    if (!sidebar) return;
+
+    sidebar.addEventListener("show.bs.offcanvas", function () {
+        if (window.innerWidth >= 769) {
+            document.body.classList.add("sidebar-open");
+        }
+    });
+
+    sidebar.addEventListener("hidden.bs.offcanvas", function () {
+        document.body.classList.remove("sidebar-open");
+    });
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth < 769) {
+            document.body.classList.remove("sidebar-open");
+        }
+    });
+
+});
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

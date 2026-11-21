@@ -1,0 +1,961 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WRISTERY | Luxury Watches</title>
+    <link rel="icon" type="image/png" href="../Image/Logo.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../CSS/Couplewatches.css">
+</head>
+
+<body>
+   <div class="announcement-bar">
+
+    <div class="announcement-track">
+
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+
+        <div class="announcement-group" aria-hidden="true">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+
+        <div class="announcement-group" aria-hidden="true">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+    </div>
+
+</div>
+    <!-- HEADER START -->
+    <header class="wristery-header">
+
+        <div class="header-container">
+
+            <!-- Hamburger Menu -->
+            <div class="header-left">
+
+                <button class="menu-button"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#wristeryMenu"
+                    aria-controls="wristeryMenu"
+                    aria-label="Open navigation menu">
+
+                    <i class="bi bi-list"></i>
+
+                </button>
+
+            </div>
+
+            <!-- Logo -->
+            <a href="" class="wristery-logo">
+
+                <img src="../Image/Logo.png"
+                    alt="WRISTERY Luxury Watches Logo">
+
+            </a>
+
+            <!-- RIGHT: HEADER ICONS -->
+            <div class="header-icons">
+
+                <!-- SEARCH ICON -->
+                <button class="header-icon"
+                    type="button"
+                    id="searchButton"
+                    aria-label="Search"
+                    title="Search">
+
+                    <i class="bi bi-search"></i>
+
+                </button>
+
+                <!-- PERSON ICON -->
+                <a href="./signup.html"
+                    class="header-icon"
+                    aria-label="Sign Up"
+                    title="Sign Up">
+
+                    <i class="bi bi-person"></i>
+
+                </a>
+
+                <!-- SHOPPING BAG -->
+                <a href="./Cart.html" class="header-icon" aria-label="Shopping Bag" title="Shopping bag">
+
+                    <i class="bi bi-bag"></i>
+
+                    <span class="cart-count">0</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+    <!-- HEADER END -->
+
+    <!-- WRISTERY SEARCH PANEL -->
+<div class="wristery-search-panel" id="searchPanel">
+
+    <form id="searchForm" class="search-form">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search watches, collections..."
+            autocomplete="off"
+            aria-label="Search WRISTERY">
+
+        <button type="submit" aria-label="Submit Search">
+            <i class="bi bi-search"></i>
+        </button>
+
+        <button type="button" id="closeSearch" aria-label="Close Search">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+    </form>
+
+    <div class="search-results" id="searchResults"></div>
+
+</div>
+
+    <!-- SIDEBAR MENU START -->
+    <div class="offcanvas offcanvas-start wristery-menu"
+    tabindex="-1"
+    id="wristeryMenu"
+    aria-labelledby="wristeryMenuLabel">
+
+    <div class="offcanvas-header">
+
+    <h5 class="offcanvas-title" id="wristeryMenuLabel">
+        WRISTERY
+    </h5>
+
+    <button type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close menu">
+    </button>
+
+</div>
+
+<div class="offcanvas-body">
+
+    <p class="menu-subtitle">DISCOVER OUR WORLD</p>
+
+    <nav class="menu-links" aria-label="Main navigation">
+   
+                <a href="index.html">
+                    <i class="bi bi-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="about.html">
+                    <i class="bi bi-info-circle"></i>
+                    <span>About</span>
+                </a>
+
+                <!-- CATEGORIES DROPDOWN -->
+                <div class="category-menu">
+
+                    <button class="category-toggle"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#watchCategories"
+                        aria-expanded="false"
+                        aria-controls="watchCategories">
+
+                        <span class="category-label">
+
+                            <i class="bi bi-watch"></i>
+
+                            <span>Categories</span>
+
+                        </span>
+
+                        <i class="bi bi-chevron-down category-arrow"></i>
+
+                    </button>
+
+                    <div class="collapse" id="watchCategories">
+
+                        <div class="subcategory-links">
+
+                            <a href="./Menwatches.html">
+                                <b>Men Watches</b>
+                            </a>
+
+                            <a href="./Womanwatches.html">
+                                <b>Women Watches</b>
+                            </a>
+
+                            <a href="./Couplewatches.html">
+                                <b>Couple Watches</b>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <a href="./Gallery.html">
+                    <i class="bi bi-images"></i>
+                    <span>Gallery</span>
+                </a>
+
+                <a href="./Store Locator.html">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Store Locator</span>
+                </a>
+
+                <a href="./Support.html">
+                    <i class="bi bi-headset"></i>
+                    <span>Support</span>
+                </a>
+
+                <a href="./Contact.html">
+                    <i class="bi bi-envelope"></i>
+                    <span>Contact</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </div>
+    <!-- SIDEBAR MENU END -->
+
+    <aside class="offcanvas offcanvas-end shopping-bag"
+        tabindex="-1"
+        id="shoppingBag"
+        aria-labelledby="shoppingBagTitle">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="shoppingBagTitle">Your Bag</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close shopping bag"></button>
+        </div>
+        <div class="offcanvas-body">
+            <section class="shopping-bag-view" id="shoppingBagView">
+                <div class="shopping-bag-items" id="shoppingBagItems" aria-live="polite"></div>
+                <div class="shopping-bag-summary">
+                    <div class="shopping-bag-subtotal">
+                        <span>Subtotal</span>
+                        <strong id="shoppingBagSubtotal">PKR 0</strong>
+                    </div>
+                    <p>Shipping and taxes calculated at checkout.</p>
+                    <button class="checkout-button" id="proceedToCheckout" type="button" disabled>
+                        Proceed to checkout
+                    </button>
+                </div>
+            </section>
+            <section class="checkout-view" id="checkoutView" hidden>
+                <button class="checkout-back" id="backToBag" type="button">
+                    <i class="bi bi-arrow-left" aria-hidden="true"></i> Back to bag
+                </button>
+                <form id="orderForm">
+                    <h3>Order details</h3>
+                    <label for="customerName">Full name</label>
+                    <input id="customerName" name="customerName" autocomplete="name" required>
+
+                    <label for="customerPhone">Phone number</label>
+                    <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" required>
+
+                    <label for="customerEmail">Email address</label>
+                    <input id="customerEmail" name="customerEmail" type="email" autocomplete="email" required>
+
+                    <label for="deliveryAddress">Delivery address</label>
+                    <textarea id="deliveryAddress" name="deliveryAddress" autocomplete="street-address" rows="3" required></textarea>
+
+                    <div class="checkout-review">
+                        <h4>Order total</h4>
+                        <div id="checkoutOrderLines"></div>
+                        <div class="shopping-bag-subtotal">
+                            <span>Total</span>
+                            <strong id="checkoutTotal">PKR 0</strong>
+                        </div>
+                    </div>
+                    <button class="checkout-button" type="submit">Confirm order</button>
+                </form>
+            </section>
+            <section class="order-confirmation" id="orderConfirmation" aria-live="polite" hidden>
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                <h3>Order confirmed</h3>
+                <p id="orderConfirmationMessage"></p>
+                <button class="checkout-button" type="button" data-bs-dismiss="offcanvas">Continue shopping</button>
+            </section>
+        </div>
+    </aside>
+
+
+    <!-- WATCH VIDEO START -->
+    <div class="watch-video-container">
+
+        <video class="watch-video" autoplay muted loop playsinline>
+
+            <source src="../Video/Couple video.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+    <!-- WATCH VIDEO END -->
+    
+<!-- PRODUCT CARDS -->
+
+    <div class="product-container">
+
+        <!-- CARD 1 -->
+        <div class="product-card">
+            <img src="../Image/Couplw 01.jpeg"
+                 alt="Classic Gold Watch"
+                 class="product-image">
+            <h3>Classic Gold Watch</h3>
+            <p>Elegant luxury design</p>
+            <h4>Rs. 15,000</h4>
+            <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="product-card">
+            <img src="../Image/Couple 02.jpeg"
+                 alt="Black Luxury Watch"
+                 class="product-image">
+            <h3>Black Luxury Watch</h3>
+            <p>Modern premium design</p>
+            <h4>Rs. 18,000</h4>
+            <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="product-card">
+            <img src="../Image/Couple 03.jpeg"
+                 alt="Silver Classic Watch"
+                 class="product-image">
+            <h3>Silver Classic Watch</h3>
+            <p>Timeless elegant style</p>
+            <h4>Rs. 20,000</h4>
+            <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="product-card">
+            <img src="../Image/couple 10.jpeg"
+                 alt="Luxury Watch 4"
+                 class="product-image">
+            <h3>Luxury Gold Watch</h3>
+            <p>Elegant luxury design</p>
+            <h4>Rs. 15,000</h4>
+            <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="product-card">
+            <img src="../Image/Couple 05.jpeg"
+                 alt="Luxury Watch 5"
+                 class="product-image">
+            <h3>Black Premium Watch</h3>
+            <p>Modern premium design</p>
+            <h4>Rs. 18,000</h4>
+            <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="product-card">
+            <img src="../Image/Couple 06.jpeg"
+                 alt="Luxury Watch 6"
+                 class="product-image">
+            <h3>Silver Classic Watch</h3>
+            <p>Timeless elegant style</p>
+            <h4>Rs. 20,000</h4>
+            <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="product-card">
+            <img src="../Image/Couple 07.jpeg"
+                 alt="Luxury Watch 7"
+                 class="product-image">
+            <h3>Black Luxury Watch</h3>
+            <p>Modern premium design</p>
+            <h4>Rs. 18,000</h4>
+            <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="product-card">
+            <img src="../Image/Couple 08.jpeg"
+                 alt="Luxury Watch 8"
+                 class="product-image">
+            <h3>Silver Premium Watch</h3>
+            <p>Timeless elegant style</p>
+            <h4>Rs. 20,000</h4>
+            <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- PRODUCT CARD 9 -->
+<div class="product-card">
+    <img src="../Image/Couple 09.jpeg"
+         alt="Luxury Watch 9"
+         class="product-image">
+
+    <h3>Golden Classic Watch</h3>
+    <p>Elegant design for every occasion</p>
+    <h4>Rs. 22,000</h4>
+
+    <button type="button">Add to Cart</button>
+</div>
+       <!-- PRODUCT CARD 10-->
+<div class="product-card">
+    <img src="../Image/Couple 13.jpeg"
+         alt="Luxury Watch 9"
+         class="product-image">
+
+    <h3>Golden Classic Watch</h3>
+    <p>Elegant design for every occasion</p>
+    <h4>Rs. 22,000</h4>
+
+    <button type="button">Add to Cart</button>
+</div>
+       <!-- PRODUCT CARD 11 -->
+<div class="product-card">
+    <img src="../Image/couple 14.jpeg"
+         alt="Luxury Watch 9"
+         class="product-image">
+
+    <h3>Golden Classic Watch</h3>
+    <p>Elegant design for every occasion</p>
+    <h4>Rs. 22,000</h4>
+
+    <button type="button">Add to Cart</button>
+</div>
+       <!-- PRODUCT CARD 12-->
+<div class="product-card">
+    <img src="../Image/couple 15.jpeg"
+         alt="Luxury Watch 9"
+         class="product-image">
+
+    <h3>Golden Classic Watch</h3>
+    <p>Elegant design for every occasion</p>
+    <h4>Rs. 22,000</h4>
+
+    <button type="button">Add to Cart</button>
+</div>
+
+    </div>
+
+      
+</section>
+    <footer class="wristery-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="./Index.html" class="footer-logo">WRISTERY</a>
+                    <p class="footer-tagline">TIMELESS STYLE. A LEGACY ON YOUR WRIST.</p>
+                    <p class="footer-description">
+                        More than a watch, it's a statement of who you are.
+                        Discover timeless designs crafted for those who value
+                        elegance, confidence, and distinction.
+                    </p>
+                </div>
+
+                <nav class="footer-column" aria-label="Explore">
+                    <h2 class="footer-column-title">Explore</h2>
+                    <div class="footer-column-links">
+                        <a href="./Index.html">Home</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./Gallery.html">Gallery</a>
+                        <a href="./Store Locator.html">Store Locator</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-column" aria-label="Collections">
+                    <h2 class="footer-column-title">Collections</h2>
+                    <div class="footer-column-links">
+                        <a href="./Menwatches.html">Men's Watches</a>
+                        <a href="./Womanwatches.html">Women's Watches</a>
+                        <a href="./Couplewatches.html">Couple Watches</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-column" aria-label="Customer care">
+                    <h2 class="footer-column-title">Customer Care</h2>
+                    <div class="footer-column-links">
+                        <a href="./Support.html">Support</a>
+                        <a href="./Contact.html">Contact Us</a>
+                        <a href="./Cart.html">Shopping Bag</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="year"></span> WRISTERY. CRAFTED FOR TIMELESS ELEGANCE.
+                </p>
+                <p class="footer-note">Every second tells your story.</p>
+            </div>
+        </div>
+    </footer>
+<!-- WRISTERY FOOTER END -->
+ 
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- WRISTERY VIDEO NAVBAR AUTO ADJUST -->
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const menu = document.getElementById("wristeryMenu");
+
+            const videoContainer = document.querySelector(".watch-video-container");
+
+            if (!menu || !videoContainer) return;
+
+
+            // SIDEBAR OPEN
+            menu.addEventListener("show.bs.offcanvas", function () {
+
+                document.body.classList.add("menu-open");
+
+            });
+
+
+            // SIDEBAR CLOSE
+            menu.addEventListener("hidden.bs.offcanvas", function () {
+
+                document.body.classList.remove("menu-open");
+
+            });
+
+        });
+/* =====================================
+   WRISTERY SEARCH FUNCTIONALITY
+===================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const searchButton = document.getElementById("searchButton");
+    const searchPanel = document.getElementById("searchPanel");
+    const searchInput = document.getElementById("searchInput");
+    const searchForm = document.getElementById("searchForm");
+    const searchResults = document.getElementById("searchResults");
+    const closeSearch = document.getElementById("closeSearch");
+
+    // CHECK SEARCH ELEMENTS
+    if (!searchButton || !searchPanel || !searchInput ||
+        !searchForm || !searchResults || !closeSearch) {
+        console.error("WRISTERY Search elements not found!");
+        return;
+    }
+
+    // WEBSITE PAGES
+    const pages = [
+        { name: "Men Watches", keywords: ["men", "man", "mens"], url: "Menwatches.html" },
+        { name: "Women Watches", keywords: ["women", "woman", "ladies"], url: "Womanwatches.html" },
+        { name: "Couple Watches", keywords: ["couple", "matching"], url: "Couplewatches.html" },
+        { name: "Home", keywords: ["home", "homepage"], url: "index.html" },
+        { name: "About Us", keywords: ["about", "story"], url: "about.html" },
+        { name: "Gallery", keywords: ["gallery", "photos"], url: "gallery.html" },
+        { name: "Store Locator", keywords: ["store", "location"], url: "Store Locator.html" },
+        { name: "Support", keywords: ["support", "help"], url: "support.html" },
+        { name: "Contact Us", keywords: ["contact"], url: "Contact.html" }
+    ];
+
+    // OPEN SEARCH PANEL
+    searchButton.addEventListener("click", function () {
+
+        const isOpen = searchPanel.style.display === "block";
+
+        searchPanel.style.display = isOpen ? "none" : "block";
+
+        if (!isOpen) {
+            searchInput.focus();
+        } else {
+            searchInput.value = "";
+            searchResults.innerHTML = "";
+        }
+
+    });
+
+    // CLOSE SEARCH PANEL
+    closeSearch.addEventListener("click", function () {
+
+        searchPanel.style.display = "none";
+        searchInput.value = "";
+        searchResults.innerHTML = "";
+
+    });
+
+    // SEARCH FUNCTION
+    function searchPages(value) {
+
+        const query = value.toLowerCase().trim();
+
+        searchResults.innerHTML = "";
+
+        if (query === "") {
+            return [];
+        }
+
+        const results = pages.filter(function (page) {
+
+            return page.name.toLowerCase().includes(query) ||
+                page.keywords.some(function (keyword) {
+                    return keyword.includes(query);
+                });
+
+        });
+
+        if (results.length > 0) {
+
+            results.forEach(function (page) {
+
+                const link = document.createElement("a");
+
+                link.href = page.url;
+                link.textContent = page.name;
+
+                searchResults.appendChild(link);
+
+            });
+
+        } else {
+
+            const message = document.createElement("p");
+            message.textContent = "No results found. Please try another search.";
+
+            searchResults.appendChild(message);
+
+        }
+
+        return results;
+    }
+
+    // SHOW RESULTS WHILE TYPING
+    searchInput.addEventListener("input", function () {
+        searchPages(searchInput.value);
+    });
+
+    // SEARCH FORM SUBMIT
+    searchForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const results = searchPages(searchInput.value);
+
+        if (results.length > 0) {
+            window.location.href = results[0].url;
+        }
+
+    });
+
+});
+/* =====================================
+   WRISTERY ADD TO BAG FUNCTIONALITY
+===================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cartCounts = document.querySelectorAll(".cart-count");
+    const productButtons = document.querySelectorAll(".product-card button");
+    const cartItems = document.getElementById("shoppingBagItems");
+    const cartSubtotal = document.getElementById("shoppingBagSubtotal");
+    const checkoutButton = document.getElementById("proceedToCheckout");
+    const shoppingBagView = document.getElementById("shoppingBagView");
+    const checkoutView = document.getElementById("checkoutView");
+    const checkoutLines = document.getElementById("checkoutOrderLines");
+    const checkoutTotal = document.getElementById("checkoutTotal");
+    const orderForm = document.getElementById("orderForm");
+    const orderConfirmation = document.getElementById("orderConfirmation");
+
+    function loadCart() {
+        try {
+            const savedCart = JSON.parse(localStorage.getItem("wristeryCart")) || [];
+            return Array.isArray(savedCart) ? savedCart : [];
+        } catch (error) {
+            return [];
+        }
+    }
+
+    let cart = loadCart();
+
+    function formatCurrency(amount) {
+        return "PKR " + amount.toLocaleString("en-PK", { useGrouping: false, maximumFractionDigits: 0 });
+    }
+
+    function getItemPrice(item) {
+        const priceText = String(item.price).replace(/,/g, "");
+        const priceMatch = priceText.match(/\d+(?:\.\d+)?/);
+        const price = typeof item.price === "number" ? item.price : Number(priceMatch && priceMatch[0]);
+        return Number.isFinite(price) ? price : 0;
+    }
+
+    document.querySelectorAll(".product-card h4").forEach(function (priceElement) {
+        priceElement.textContent = formatCurrency(getItemPrice({ price: priceElement.textContent }));
+    });
+
+    function getCartTotal() {
+        return cart.reduce(function (total, item) {
+            return total + getItemPrice(item) * (Number(item.quantity) || 0);
+        }, 0);
+    }
+
+    function renderCart() {
+        const totalItems = cart.reduce(function (total, item) {
+            return total + (Number(item.quantity) || 0);
+        }, 0);
+
+        cartCounts.forEach(function (badge) {
+            badge.textContent = totalItems;
+        });
+
+        cartItems.replaceChildren();
+        if (cart.length === 0) {
+            const emptyMessage = document.createElement("p");
+            emptyMessage.className = "shopping-bag-empty";
+            emptyMessage.textContent = "Your bag is empty.";
+            cartItems.appendChild(emptyMessage);
+        }
+
+        cart.forEach(function (item, index) {
+            const quantity = Number(item.quantity) || 0;
+            const priceValue = getItemPrice(item);
+            const lineTotal = priceValue * quantity;
+            const row = document.createElement("article");
+            row.className = "shopping-bag-item";
+
+            const image = document.createElement("img");
+            image.src = item.image || "";
+            image.alt = item.name || "Watch";
+
+            const details = document.createElement("div");
+            details.className = "shopping-bag-item-details";
+
+            const name = document.createElement("h3");
+            name.textContent = item.name || "Watch";
+
+            const price = document.createElement("p");
+            price.textContent = formatCurrency(priceValue) + " each";
+
+            const lineTotalLabel = document.createElement("p");
+            lineTotalLabel.className = "shopping-bag-line-total";
+            lineTotalLabel.textContent = "Item total: " + formatCurrency(lineTotal);
+
+            const controls = document.createElement("div");
+            controls.className = "shopping-bag-quantity";
+
+            const decrease = document.createElement("button");
+            decrease.type = "button";
+            decrease.textContent = "−";
+            decrease.setAttribute("aria-label", "Decrease quantity of " + name.textContent);
+            decrease.addEventListener("click", function () {
+                if (quantity <= 1) {
+                    cart.splice(index, 1);
+                } else {
+                    cart[index].quantity = quantity - 1;
+                }
+                saveCart();
+            });
+
+            const quantityLabel = document.createElement("span");
+            quantityLabel.textContent = quantity;
+
+            const increase = document.createElement("button");
+            increase.type = "button";
+            increase.textContent = "+";
+            increase.setAttribute("aria-label", "Increase quantity of " + name.textContent);
+            increase.addEventListener("click", function () {
+                cart[index].quantity = quantity + 1;
+                saveCart();
+            });
+
+            const remove = document.createElement("button");
+            remove.type = "button";
+            remove.className = "shopping-bag-remove";
+            remove.textContent = "Remove";
+            remove.addEventListener("click", function () {
+                cart.splice(index, 1);
+                saveCart();
+            });
+
+            controls.append(decrease, quantityLabel, increase, remove);
+            details.append(name, price, lineTotalLabel, controls);
+            row.append(image, details);
+            cartItems.appendChild(row);
+        });
+
+        cartSubtotal.textContent = formatCurrency(getCartTotal());
+        checkoutButton.disabled = cart.length === 0;
+        renderCheckoutReview();
+    }
+
+    function renderCheckoutReview() {
+        checkoutLines.replaceChildren();
+        cart.forEach(function (item) {
+            const quantity = Number(item.quantity) || 0;
+            const line = document.createElement("p");
+            line.textContent = (item.name || "Watch") + " × " + quantity + "  " +
+                formatCurrency(getItemPrice(item) * quantity);
+            checkoutLines.appendChild(line);
+        });
+        checkoutTotal.textContent = formatCurrency(getCartTotal());
+    }
+
+    function saveCart() {
+        localStorage.setItem("wristeryCart", JSON.stringify(cart));
+        renderCart();
+    }
+
+    checkoutButton.addEventListener("click", function () {
+        if (cart.length === 0) return;
+        renderCheckoutReview();
+        shoppingBagView.hidden = true;
+        checkoutView.hidden = false;
+        orderConfirmation.hidden = true;
+        document.getElementById("customerName").focus();
+    });
+
+    document.getElementById("backToBag").addEventListener("click", function () {
+        checkoutView.hidden = true;
+        shoppingBagView.hidden = false;
+    });
+
+    orderForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (!orderForm.reportValidity() || cart.length === 0) return;
+
+        const orderNumber = "WR-" + Date.now().toString().slice(-8);
+        const customerName = document.getElementById("customerName").value.trim();
+        const orderTotal = getCartTotal();
+        localStorage.setItem("wristeryLastOrder", JSON.stringify({
+            orderNumber: orderNumber,
+            customerName: customerName,
+            customerPhone: document.getElementById("customerPhone").value.trim(),
+            customerEmail: document.getElementById("customerEmail").value.trim(),
+            deliveryAddress: document.getElementById("deliveryAddress").value.trim(),
+            items: cart,
+            total: orderTotal,
+            createdAt: new Date().toISOString()
+        }));
+
+        document.getElementById("orderConfirmationMessage").textContent =
+            "Thank you, " + customerName + ". Order " + orderNumber +
+            " is confirmed for " + formatCurrency(orderTotal) + ".";
+        cart = [];
+        saveCart();
+        orderForm.reset();
+        shoppingBagView.hidden = true;
+        checkoutView.hidden = true;
+        orderConfirmation.hidden = false;
+    });
+
+    document.getElementById("shoppingBag").addEventListener("hidden.bs.offcanvas", function () {
+        shoppingBagView.hidden = false;
+        checkoutView.hidden = true;
+        orderConfirmation.hidden = true;
+    });
+
+    productButtons.forEach(function (button) {
+
+        const card = button.closest(".product-card");
+
+        const productName = card.querySelector("h3").textContent.trim();
+        const productPrice = card.querySelector("h4").textContent.trim();
+        const productImage = card.querySelector("img").getAttribute("src");
+
+        const existingProduct = cart.find(function (item) {
+            return item.name === productName &&
+                   item.price === productPrice &&
+                   item.image === productImage;
+        });
+
+        if (existingProduct) {
+            button.textContent = "Added to Bag";
+        }
+
+        button.addEventListener("click", function () {
+
+            const product = cart.find(function (item) {
+                return item.name === productName &&
+                       item.price === productPrice &&
+                       item.image === productImage;
+            });
+
+            if (product) {
+
+                product.quantity++;
+
+            } else {
+
+                cart.push({
+                    name: productName,
+                    price: productPrice,
+                    image: productImage,
+                    quantity: 1
+                });
+
+            }
+
+            saveCart();
+
+            button.textContent = "Added to Bag";
+
+        });
+
+    });
+
+    renderCart();
+
+    window.addEventListener("storage", function (event) {
+        if (event.key === "wristeryCart") {
+            cart = loadCart();
+            renderCart();
+        }
+    });
+
+});
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

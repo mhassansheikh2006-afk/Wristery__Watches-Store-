@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WRISTERY | Luxury Gallery</title>
+    <link rel="icon" type="image/png" href="../Image/Logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="../CSS/Gallery.css">
+</head>
+
+<body>
+<div class="announcement-bar">
+
+    <div class="announcement-track">
+
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+
+        <div class="announcement-group" aria-hidden="true">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+
+        <div class="announcement-group" aria-hidden="true">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+    </div>
+
+</div>
+
+
+    <!-- HEADER -->
+    <header class="wristery-header">
+        <div class="header-container">
+
+            <div class="header-left">
+                <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#wristeryMenu"
+                    aria-controls="wristeryMenu" aria-label="Open navigation menu">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+
+            <a href="" class="wristery-logo">
+                <img src="../Image/Logo.png" alt="WRISTERY Luxury Watches Logo">
+            </a>
+
+            <div class="header-icons">
+
+                <button class="header-icon" type="button" id="searchButton" aria-label="Search watches" title="Search">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <a href="./signup.html" class="header-icon" aria-label="Sign Up" title="Sign Up">
+                    <i class="bi bi-person"></i>
+                </a>
+
+                <a href="./Cart.html" class="header-icon" aria-label="Shopping Bag" title="Shopping Bag">
+                    <i class="bi bi-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- SIDEBAR MENU -->
+    <div class="offcanvas offcanvas-start wristery-menu" tabindex="-1" id="wristeryMenu"
+        aria-labelledby="wristeryMenuLabel">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="wristeryMenuLabel">
+                WRISTERY
+            </h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu">
+            </button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <p class="menu-subtitle">DISCOVER OUR WORLD</p>
+
+            <nav class="menu-links" aria-label="Main navigation">
+
+                <a href="index.html">
+                    <i class="bi bi-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="about.html">
+                    <i class="bi bi-info-circle"></i>
+                    <span>About</span>
+                </a>
+
+                <div class="category-menu">
+
+                    <button class="category-toggle" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#watchCategories" aria-expanded="false" aria-controls="watchCategories">
+
+                        <span class="category-label">
+                            <i class="bi bi-watch"></i>
+                            <span>Categories</span>
+                        </span>
+
+                        <i class="bi bi-chevron-down category-arrow"></i>
+                    </button>
+
+                    <div class="collapse" id="watchCategories">
+                        <div class="subcategory-links">
+
+                            <a href="./Menwatches.html">
+                                <b>Men Watches</b>
+                            </a>
+
+                            <a href="./Womanwatches.html">
+                                <b>Women Watches</b>
+                            </a>
+
+                            <a href="./Couplewatches.html">
+                                <b>Couple Watches</b>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <a href="./Gallery.html" class="active" aria-current="page">
+                    <i class="bi bi-images"></i>
+                    <span>Gallery</span>
+                </a>
+
+                <a href="./Store Locator.html">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Store Locator</span>
+                </a>
+
+                <a href="./Support.html">
+                    <i class="bi bi-headset"></i>
+                    <span>Support</span>
+                </a>
+
+                <a href="./Contact.html">
+                    <i class="bi bi-envelope"></i>
+                    <span>Contact </span>
+                </a>
+
+            </nav>
+        </div>
+    </div>
+
+    <aside class="offcanvas offcanvas-end shopping-bag" tabindex="-1"
+        id="shoppingBag" aria-labelledby="shoppingBagTitle">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="shoppingBagTitle">Your Bag</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close shopping bag"></button>
+        </div>
+        <div class="offcanvas-body">
+            <section class="shopping-bag-view" id="shoppingBagView">
+                <div class="shopping-bag-items" id="shoppingBagItems" aria-live="polite"></div>
+                <div class="shopping-bag-summary">
+                    <div class="shopping-bag-subtotal"><span>Subtotal</span><strong id="shoppingBagSubtotal">PKR 0</strong></div>
+                    <p>Shipping and taxes calculated at checkout.</p>
+                    <button class="checkout-button" id="proceedToCheckout" type="button" disabled>Proceed to checkout</button>
+                </div>
+            </section>
+            <section class="checkout-view" id="checkoutView" hidden>
+                <button class="checkout-back" id="backToBag" type="button"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to bag</button>
+                <form id="orderForm">
+                    <h3>Order details</h3>
+                    <label for="customerName">Full name</label>
+                    <input id="customerName" name="customerName" autocomplete="name" required>
+                    <label for="customerPhone">Phone number</label>
+                    <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" required>
+                    <label for="customerEmail">Email address</label>
+                    <input id="customerEmail" name="customerEmail" type="email" autocomplete="email" required>
+                    <label for="deliveryAddress">Delivery address</label>
+                    <textarea id="deliveryAddress" name="deliveryAddress" autocomplete="street-address" rows="3" required></textarea>
+                    <div class="checkout-review">
+                        <h4>Order total</h4>
+                        <div id="checkoutOrderLines"></div>
+                        <div class="shopping-bag-subtotal"><span>Total</span><strong id="checkoutTotal">PKR 0</strong></div>
+                    </div>
+                    <button class="checkout-button" type="submit">Confirm order</button>
+                </form>
+            </section>
+            <section class="order-confirmation" id="orderConfirmation" aria-live="polite" hidden>
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                <h3>Order confirmed</h3>
+                <p id="orderConfirmationMessage"></p>
+                <button class="checkout-button" type="button" data-bs-dismiss="offcanvas">Continue shopping</button>
+            </section>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="website">
+        <main class="main-content">
+
+            <!-- GALLERY HEADING -->
+            <section class="gallery-heading">
+
+                <span class="eyebrow"><b>DISCOVER OUR WORLD</b></span>
+
+                <h1>Gallery<span>.</span></h1>
+
+                <p>
+                    TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.
+                    Explore our exquisite collection of watches,
+                    crafted for those who appreciate timeless style.
+                </p>
+
+            </section>
+
+            <!-- SEARCH BAR -->
+            <div class="search-wrapper">
+
+                <i class="bi bi-search"></i>
+
+                <input type="search" id="searchInput" placeholder="Search your perfect timepiece..."
+                    aria-label="Search watches">
+
+                <span class="search-shortcut">SEARCH</span>
+
+            </div>
+
+            <!-- FILTER BUTTONS -->
+            <section class="filter-section" aria-label="Filter watches">
+
+                <div class="filter-buttons" id="filterButtons">
+
+                    <button class="filter-btn active" type="button" data-filter="all">
+                        All Watches
+                    </button>
+                </div>
+            </section>
+
+            <!-- WATCH GALLERY -->
+            <section class="watch-grid" id="watchGrid" aria-label="Watch collection">
+
+                <!-- WATCH 1 -->
+                <article class="watch-card" data-name="Elora Royal Black" data-category="men luxury" data-price="45000">
+
+                    <div class="watch-image">
+
+                        <span class="product-tag">BESTSELLER</span>
+
+                        <button class="wishlist-btn" type="button" aria-label="Add Elora to wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <img src="../Image/Gallery pic 01.jpeg" alt="Elora Royal Black luxury wristwatch"
+                            loading="lazy">
+
+                        <button class="quick-view" type="button">
+                            QUICK VIEW
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="watch-info">
+                        <h3>Elora</h3>
+                        <span class="watch-price">Rs. 45,000</span>
+                    </div>
+
+                    <button class="add-to-cart" type="button">
+                        ADD TO CART
+                    </button>
+                </article>
+
+                <!-- WATCH 2 -->
+                <article class="watch-card" data-name="Lagaila Muse Trio Ocean Blue" data-category="men classic"
+                    data-price="10000">
+
+                    <div class="watch-image">
+
+                        <button class="wishlist-btn" type="button" aria-label="Add Lagaila Muse Trio to wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <img src="../Image/gallery.jpeg" alt="Lagaila Muse Trio Ocean Blue wristwatch"
+                            loading="lazy">
+
+                        <button class="quick-view" type="button">
+                            QUICK VIEW
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="watch-info">
+                        <h3>Lagaila Muse Trio</h3>
+                        <span class="watch-price">Rs. 10,000</span>
+                    </div>
+                    <button class="add-to-cart" type="button">
+                        ADD TO CART
+                    </button>
+                </article>
+
+                <!-- WATCH 3 -->
+                <article class="watch-card" data-name="Midnight Golden Heritage" data-category="women luxury"
+                    data-price="50000">
+
+                    <div class="watch-image">
+
+                        <span class="product-tag">SIGNATURE</span>
+
+                        <button class="wishlist-btn" type="button" aria-label="Add Midnight to wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <img src="../Image/Gallery pic 02.jpeg" alt="Midnight Golden Heritage elegant watch"
+                            loading="lazy">
+
+                        <button class="quick-view" type="button">
+                            QUICK VIEW
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="watch-info">
+                        <h3>Midnight</h3>
+                        <span class="watch-price">Rs. 50,000</span>
+                    </div>
+                    <button class="add-to-cart" type="button">
+                        ADD TO CART
+                    </button>
+                </article>
+
+                <!-- WATCH 4 -->
+                <article class="watch-card" data-name="Aurora Silver Horizon" data-category="men classic"
+                    data-price="60000">
+
+                    <div class="watch-image">
+
+                        <button class="wishlist-btn" type="button" aria-label="Add Aurora to wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <img src="../Image/gallery image.jpeg" alt="Aurora Silver Horizon luxury watch" loading="lazy">
+
+                        <button class="quick-view" type="button">
+                            QUICK VIEW
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="watch-info">
+                        <h3>Aurora</h3>
+                        <span class="watch-price">Rs. 60,000</span>
+                    </div>
+                    <button class="add-to-cart" type="button">
+                        ADD TO CART
+                    </button>
+                </article>
+
+                <!-- WATCH 5 -->
+                <article class="watch-card" data-name="Diamond Midnight Gold" data-category="men luxury"
+                    data-price="70000">
+
+                    <div class="watch-image">
+
+                        <span class="product-tag">PREMIUM</span>
+
+                        <button class="wishlist-btn" type="button" aria-label="Add Diamond to wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <img src="../Image/Gallery pic 06.jpeg" alt="Diamond Midnight Gold premium timepiece"
+                            loading="lazy">
+
+                        <button class="quick-view" type="button">
+                            QUICK VIEW
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="watch-info">
+                        <h3>Diamond</h3>
+                        <span class="watch-price">Rs. 70,000</span>
+                    </div>
+                    <button class="add-to-cart" type="button">
+                        ADD TO CART
+                    </button>
+                </article>
+
+                <!-- WATCH 6 -->
+                <article class="watch-card" data-name="Octa Rose Elegance" data-category="women classic"
+                    data-price="90000">
+
+                    <div class="watch-image">
+
+                        <button class="wishlist-btn" type="button" aria-label="Add Octa to wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <img src="../Image/Gallery pic 05.jpeg" alt="Octa Rose Elegance wristwatch" loading="lazy">
+
+                        <button class="quick-view" type="button">
+                            QUICK VIEW
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="watch-info">
+                        <h3>Octa</h3>
+                        <span class="watch-price">Rs. 90,000</span>
+                    </div>
+
+                    <button class="add-to-cart" type="button">
+                        ADD TO CART
+                    </button>
+                </article>
+
+            </section>
+
+            <!-- NO RESULTS -->
+            <div class="no-results" id="noResults" hidden>
+
+                <i class="bi bi-search"></i>
+
+                <h3>No watches found</h3>
+
+                <p>
+                    Try another name or choose a different category.
+                </p>
+
+                <button id="resetFilters" type="button">
+                    Show All Watches
+                </button>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="wristery-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="./Index.html" class="footer-logo">WRISTERY</a>
+                    <p class="footer-tagline">TIMELESS STYLE. A LEGACY ON YOUR WRIST.</p>
+                    <p class="footer-description">
+                        More than a watch, it's a statement of who you are.
+                        Discover timeless designs crafted for those who value
+                        elegance, confidence, and distinction.
+                    </p>
+                </div>
+
+                <nav class="footer-column" aria-label="Explore">
+                    <h2 class="footer-column-title">Explore</h2>
+                    <div class="footer-column-links">
+                        <a href="./Index.html">Home</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./Gallery.html">Gallery</a>
+                        <a href="./Store Locator.html">Store Locator</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-column" aria-label="Collections">
+                    <h2 class="footer-column-title">Collections</h2>
+                    <div class="footer-column-links">
+                        <a href="./Menwatches.html">Men's Watches</a>
+                        <a href="./Womanwatches.html">Women's Watches</a>
+                        <a href="./Couplewatches.html">Couple Watches</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-column" aria-label="Customer care">
+                    <h2 class="footer-column-title">Customer Care</h2>
+                    <div class="footer-column-links">
+                        <a href="./Support.html">Support</a>
+                        <a href="./Contact.html">Contact Us</a>
+                        <a href="./Cart.html">Shopping Bag</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="year"></span> WRISTERY. CRAFTED FOR TIMELESS ELEGANCE.
+                </p>
+                <p class="footer-note">Every second tells your story.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- QUICK VIEW MODAL -->
+    <div class="modal fade" id="watchModal" tabindex="-1" aria-labelledby="modalName" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+
+            <div class="modal-content quick-modal">
+
+                <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+
+                <div class="row g-0">
+
+                    <div class="col-md-6">
+                        <img src="" id="modalImage" class="modal-watch-image" alt="Selected watch">
+                    </div>
+
+                    <div class="col-md-6 modal-details">
+
+                        <span class="eyebrow">WRISTERY TIMEPIECES</span>
+
+                        <h2 id="modalName">Watch Name</h2>
+
+                        <p class="modal-price" id="modalPrice"></p>
+
+                        <p class="modal-description">
+                            Discover timeless style with this WRISTERY
+                            collection piece, designed for a refined look.
+                        </p>
+
+                        <div class="modal-features">
+
+                            <span>
+                                <i class="bi bi-gem"></i>
+                                Elegant design
+                            </span>
+
+                            <span>
+                                <i class="bi bi-stars"></i>
+                                Refined details
+                            </span>
+
+                            <span>
+                                <i class="bi bi-clock"></i>
+                                Timeless style
+                            </span>
+
+                        </div>
+
+                        <button class="modal-wishlist" id="modalWishlist" type="button">
+                            <i class="bi bi-heart"></i>
+                            ADD TO WISHLIST
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GALLERY JS -->
+    <script src="../Js/gallery.js"></script>
+
+    <!-- HEADER SEARCH + FOOTER YEAR -->
+
+    <script>
+       
+document.addEventListener("DOMContentLoaded", function () {
+
+    // =====================================
+    // HEADER SEARCH BUTTON
+    // =====================================
+
+    const searchButton = document.getElementById("searchButton");
+    const searchInput = document.getElementById("searchInput");
+
+    if (searchButton && searchInput) {
+
+        searchButton.addEventListener("click", function () {
+
+            searchInput.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+            searchInput.focus();
+
+        });
+
+    }
+
+
+    // =====================================
+    // FOOTER CURRENT YEAR
+    // =====================================
+
+    const yearElement = document.getElementById("year");
+
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
+
+    // =====================================
+    // CART DATA LOAD FROM LOCAL STORAGE
+    // =====================================
+
+    let cart = [];
+
+    try {
+        cart = JSON.parse(localStorage.getItem("wristeryCart")) || [];
+
+        if (!Array.isArray(cart)) {
+            cart = [];
+        }
+
+    } catch (error) {
+        cart = [];
+    }
+
+    const cartItems = document.getElementById("shoppingBagItems");
+    const cartSubtotal = document.getElementById("shoppingBagSubtotal");
+    const checkoutButton = document.getElementById("proceedToCheckout");
+    const shoppingBagView = document.getElementById("shoppingBagView");
+    const checkoutView = document.getElementById("checkoutView");
+    const checkoutLines = document.getElementById("checkoutOrderLines");
+    const checkoutTotal = document.getElementById("checkoutTotal");
+    const orderForm = document.getElementById("orderForm");
+    const orderConfirmation = document.getElementById("orderConfirmation");
+
+    function formatCurrency(amount) {
+        return "PKR " + amount.toLocaleString("en-PK", { useGrouping: false, maximumFractionDigits: 0 });
+    }
+
+    const catalogPrices = new Map([
+        ["Classic Gold Watch", 15000],
+        ["Black Luxury Watch", 18000],
+        ["Silver Classic Watch", 20000],
+        ["Luxury Gold Watch", 15000],
+        ["Black Premium Watch", 18000],
+        ["Silver Premium Watch", 20000],
+        ["Golden Classic Watch", 22000]
+    ]);
+
+    document.querySelectorAll(".watch-card").forEach(function (card) {
+        const name = card.querySelector(".watch-info h3")?.textContent.trim();
+        const price = Number(card.dataset.price);
+        if (name && Number.isFinite(price) && price > 0) {
+            catalogPrices.set(name, price);
+        }
+    });
+
+    function getItemPrice(item) {
+        const priceText = String(item.price).replace(/,/g, "");
+        const priceMatch = priceText.match(/\d+(?:\.\d+)?/);
+        const price = typeof item.price === "number" ? item.price : Number(priceMatch && priceMatch[0]);
+        if (Number.isFinite(price) && price >= 1) return Math.round(price);
+        return catalogPrices.get(item.name) || 0;
+    }
+
+    function repairCartPrices() {
+        let changed = false;
+        cart.forEach(function (item) {
+            const correctPrice = getItemPrice(item);
+            if (correctPrice > 0 && item.price !== correctPrice) {
+                item.price = correctPrice;
+                changed = true;
+            }
+        });
+        if (changed) {
+            localStorage.setItem("wristeryCart", JSON.stringify(cart));
+        }
+    }
+
+    repairCartPrices();
+
+    document.querySelectorAll(".watch-price").forEach(function (priceElement) {
+        priceElement.textContent = formatCurrency(getItemPrice({ price: priceElement.textContent }));
+    });
+
+    function getCartTotal() {
+        return cart.reduce(function (total, item) {
+            return total + getItemPrice(item) * (Number(item.quantity) || 0);
+        }, 0);
+    }
+
+    function renderCheckoutReview() {
+        checkoutLines.replaceChildren();
+        cart.forEach(function (item) {
+            const quantity = Number(item.quantity) || 0;
+            const line = document.createElement("p");
+            line.textContent = (item.name || "Watch") + " × " + quantity + "  " +
+                formatCurrency(getItemPrice(item) * quantity);
+            checkoutLines.appendChild(line);
+        });
+        checkoutTotal.textContent = formatCurrency(getCartTotal());
+    }
+
+
+    // =====================================
+    // RENDER BAG AND HEADER COUNT
+    // =====================================
+
+    function renderCart() {
+        const total = cart.reduce(function (sum, item) {
+            return sum + Number(item.quantity || 0);
+        }, 0);
+        document.querySelectorAll(".cart-count").forEach(function (badge) {
+            badge.textContent = total;
+        });
+
+        cartItems.replaceChildren();
+        if (cart.length === 0) {
+            const emptyMessage = document.createElement("p");
+            emptyMessage.className = "shopping-bag-empty";
+            emptyMessage.textContent = "Your bag is empty.";
+            cartItems.appendChild(emptyMessage);
+        }
+
+        cart.forEach(function (item, index) {
+            const quantity = Number(item.quantity) || 0;
+            const priceValue = getItemPrice(item);
+            const lineTotal = priceValue * quantity;
+            const row = document.createElement("article");
+            row.className = "shopping-bag-item";
+
+            const image = document.createElement("img");
+            image.src = item.image || "";
+            image.alt = item.name || "Watch";
+            const details = document.createElement("div");
+            details.className = "shopping-bag-item-details";
+            const name = document.createElement("h3");
+            name.textContent = item.name || "Watch";
+            const price = document.createElement("p");
+            price.textContent = formatCurrency(priceValue) + " each";
+            const lineTotalLabel = document.createElement("p");
+            lineTotalLabel.className = "shopping-bag-line-total";
+            lineTotalLabel.textContent = formatCurrency(priceValue) + " × " + quantity +
+                " = " + formatCurrency(lineTotal);
+
+            const controls = document.createElement("div");
+            controls.className = "shopping-bag-quantity";
+            const decrease = document.createElement("button");
+            decrease.type = "button";
+            decrease.textContent = "−";
+            decrease.setAttribute("aria-label", "Decrease quantity of " + name.textContent);
+            decrease.addEventListener("click", function () {
+                if (quantity <= 1) cart.splice(index, 1);
+                else cart[index].quantity = quantity - 1;
+                saveCart();
+            });
+            const quantityLabel = document.createElement("span");
+            quantityLabel.textContent = quantity;
+            const increase = document.createElement("button");
+            increase.type = "button";
+            increase.textContent = "+";
+            increase.setAttribute("aria-label", "Increase quantity of " + name.textContent);
+            increase.addEventListener("click", function () {
+                cart[index].quantity = quantity + 1;
+                saveCart();
+            });
+            const remove = document.createElement("button");
+            remove.type = "button";
+            remove.className = "shopping-bag-remove";
+            remove.textContent = "Remove";
+            remove.addEventListener("click", function () {
+                cart.splice(index, 1);
+                saveCart();
+            });
+
+            controls.append(decrease, quantityLabel, increase, remove);
+            details.append(name, price, lineTotalLabel, controls);
+            row.append(image, details);
+            cartItems.appendChild(row);
+        });
+
+        cartSubtotal.textContent = formatCurrency(getCartTotal());
+        checkoutButton.disabled = cart.length === 0;
+        renderCheckoutReview();
+    }
+
+
+    // =====================================
+    // SAVE CART DATA
+    // =====================================
+
+    function saveCart() {
+
+        localStorage.setItem("wristeryCart", JSON.stringify(cart));
+
+        renderCart();
+
+    }
+
+
+    // =====================================
+    // ADD TO BAG FUNCTIONALITY
+    // =====================================
+
+    const watchCards = document.querySelectorAll(".watch-card");
+
+    watchCards.forEach(function (card) {
+
+        const addButton = card.querySelector(".add-to-cart");
+
+        if (!addButton) return;
+
+        // Product details
+        const nameElement = card.querySelector(".watch-info h3");
+        const priceElement = card.querySelector(".watch-price");
+        const imageElement = card.querySelector(".watch-image img");
+
+        if (!nameElement || !priceElement || !imageElement) return;
+
+        const productName = nameElement.textContent.trim();
+
+        // Button click
+        addButton.addEventListener("click", function () {
+
+            const productPrice = Number(card.dataset.price) ||
+                getItemPrice({ price: priceElement.textContent });
+            const productImage = imageElement.getAttribute("src");
+
+            // Check existing product
+            const existingProduct = cart.find(function (item) {
+                return item.name === productName &&
+                    item.price === productPrice &&
+                    item.image === productImage;
+            });
+
+            if (existingProduct) {
+
+                existingProduct.quantity =
+                    Number(existingProduct.quantity || 1) + 1;
+
+            } else {
+
+                cart.push({
+                    name: productName,
+                    price: productPrice,
+                    image: productImage,
+                    quantity: 1
+                });
+
+            }
+
+            // Save cart
+            saveCart();
+
+            // Button text
+            const originalText = addButton.textContent;
+
+            addButton.textContent = "ADDED TO BAG";
+
+            setTimeout(function () {
+
+                addButton.textContent = originalText;
+
+            }, 1200);
+
+        });
+
+    });
+
+
+    // =====================================
+    // GALLERY SEARCH
+    // =====================================
+
+    const noResults = document.getElementById("noResults");
+    const resetButton = document.getElementById("resetFilters");
+
+    if (searchInput && watchCards.length > 0) {
+
+        function searchWatches() {
+
+            const searchText = searchInput.value.trim().toLowerCase();
+
+            let foundWatches = 0;
+
+            watchCards.forEach(function (card) {
+
+                const watchName = (
+                    card.dataset.name || ""
+                ).toLowerCase();
+
+                const watchDetails = (
+                    card.innerText || ""
+                ).toLowerCase();
+
+                const matches =
+                    watchName.includes(searchText) ||
+                    watchDetails.includes(searchText);
+
+                card.style.display = matches ? "" : "none";
+
+                if (matches) {
+                    foundWatches++;
+                }
+
+            });
+
+
+            // NO RESULTS MESSAGE
+            if (noResults) {
+
+                if (foundWatches > 0) {
+
+                    noResults.hidden = true;
+                    noResults.style.display = "none";
+
+                } else {
+
+                    noResults.hidden = false;
+                    noResults.style.display = "block";
+
+                }
+
+            }
+
+        }
+
+
+        // Search while typing
+        searchInput.addEventListener("input", searchWatches);
+
+
+        // RESET SEARCH
+        if (resetButton) {
+
+            resetButton.addEventListener("click", function () {
+
+                searchInput.value = "";
+
+                searchWatches();
+
+                searchInput.focus();
+
+            });
+
+        }
+
+    }
+
+
+    // =====================================
+    checkoutButton.addEventListener("click", function () {
+        if (cart.length === 0) return;
+        shoppingBagView.hidden = true;
+        checkoutView.hidden = false;
+        orderConfirmation.hidden = true;
+        renderCheckoutReview();
+        document.getElementById("customerName").focus();
+    });
+
+    document.getElementById("backToBag").addEventListener("click", function () {
+        checkoutView.hidden = true;
+        shoppingBagView.hidden = false;
+    });
+
+    orderForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (!orderForm.reportValidity() || cart.length === 0) return;
+
+        const orderNumber = "WR-" + Date.now().toString().slice(-8);
+        const customerName = document.getElementById("customerName").value.trim();
+        const orderTotal = getCartTotal();
+        localStorage.setItem("wristeryLastOrder", JSON.stringify({
+            orderNumber: orderNumber,
+            customerName: customerName,
+            customerPhone: document.getElementById("customerPhone").value.trim(),
+            customerEmail: document.getElementById("customerEmail").value.trim(),
+            deliveryAddress: document.getElementById("deliveryAddress").value.trim(),
+            items: cart,
+            total: orderTotal,
+            createdAt: new Date().toISOString()
+        }));
+        document.getElementById("orderConfirmationMessage").textContent =
+            "Thank you, " + customerName + ". Order " + orderNumber +
+            " is confirmed for " + formatCurrency(orderTotal) + ".";
+        cart = [];
+        saveCart();
+        orderForm.reset();
+        shoppingBagView.hidden = true;
+        checkoutView.hidden = true;
+        orderConfirmation.hidden = false;
+    });
+
+    document.getElementById("shoppingBag").addEventListener("hidden.bs.offcanvas", function () {
+        shoppingBagView.hidden = false;
+        checkoutView.hidden = true;
+        orderConfirmation.hidden = true;
+    });
+
+
+    // INITIAL BAG RENDER
+    // =====================================
+
+    renderCart();
+
+
+    // =====================================
+    // CART COUNT REFRESH FROM OTHER TABS
+    // =====================================
+
+    window.addEventListener("storage", function (event) {
+
+        if (event.key === "wristeryCart") {
+
+            try {
+
+                cart = JSON.parse(localStorage.getItem("wristeryCart")) || [];
+
+                if (!Array.isArray(cart)) {
+                    cart = [];
+                }
+
+            } catch (error) {
+                cart = [];
+            }
+
+            repairCartPrices();
+            renderCart();
+
+        }
+
+    });
+
+
+});
+
+    </script>
+
+</body>
+
+</html>

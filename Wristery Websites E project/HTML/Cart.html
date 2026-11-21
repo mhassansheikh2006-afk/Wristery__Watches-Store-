@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bag | WRISTERY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Cart.css">
+</head>
+<body>
+    <header class="cart-header">
+        <a class="brand" href="./Index.html" aria-label="WRISTERY home">WRISTERY</a>
+        <a class="cart-home-link" href="./Index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Continue shopping</a>
+    </header>
+
+    <main class="cart-page">
+        <div class="cart-heading">
+            <p class="eyebrow">WRISTERY TIMEPIECES</p>
+            <h1>Your Bag <span id="cartItemCount">(0)</span></h1>
+        </div>
+
+        <section class="cart-layout" id="cartView" aria-label="Shopping cart">
+            <div class="cart-items" id="cartItems" aria-live="polite"></div>
+            <aside class="cart-summary" aria-label="Cart summary">
+                <h2>Order summary</h2>
+                <div class="summary-line"><span>Items</span><span id="summaryItemCount">0</span></div>
+                <div class="summary-line summary-total"><span>Subtotal</span><strong id="cartSubtotal">PKR 0</strong></div>
+                <p>Shipping and taxes calculated at checkout.</p>
+                <button class="primary-button" id="proceedToCheckout" type="button" disabled>Proceed to checkout</button>
+            </aside>
+        </section>
+
+        <section class="checkout-panel" id="checkoutView" hidden>
+            <button class="back-button" id="backToCart" type="button"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to bag</button>
+            <div class="checkout-layout">
+                <form class="order-form" id="orderForm">
+                    <p class="eyebrow">DELIVERY DETAILS</p>
+                    <h2>Confirm your order</h2>
+
+                    <label for="customerName">Full name</label>
+                    <input id="customerName" name="customerName" autocomplete="name" required>
+
+                    <label for="customerPhone">Phone number</label>
+                    <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" required>
+
+                    <label for="customerEmail">Email address</label>
+                    <input id="customerEmail" name="customerEmail" type="email" autocomplete="email" required>
+
+                    <label for="deliveryAddress">Delivery address</label>
+                    <textarea id="deliveryAddress" name="deliveryAddress" autocomplete="street-address" rows="4" required></textarea>
+
+                    <button class="primary-button" type="submit">Confirm order</button>
+                </form>
+
+                <aside class="checkout-summary" aria-label="Order review">
+                    <h2>Order review</h2>
+                    <div id="checkoutOrderLines"></div>
+                    <div class="summary-line summary-total"><span>Total</span><strong id="checkoutTotal">PKR 0</strong></div>
+                    <p>Shipping and taxes calculated at checkout.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="order-confirmation" id="orderConfirmation" aria-live="polite" hidden>
+            <i class="bi bi-check-circle" aria-hidden="true"></i>
+            <p class="eyebrow">THANK YOU</p>
+            <h2>Order confirmed</h2>
+            <p id="orderConfirmationMessage"></p>
+            <a class="primary-button button-link" href="./Index.html">Continue shopping</a>
+        </section>
+    </main>
+
+    <footer class="wristery-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="./Index.html">WRISTERY</a>
+                    <p class="footer-tagline">TIMELESS STYLE. A LEGACY ON YOUR WRIST.</p>
+                    <p class="footer-description">
+                        More than a watch, it's a statement of who you are.
+                        Discover timeless designs crafted for those who value
+                        elegance, confidence, and distinction.
+                    </p>
+                </div>
+
+                <nav class="footer-column" aria-label="Explore">
+                    <h2 class="footer-column-title">Explore</h2>
+                    <div class="footer-column-links">
+                        <a href="./Index.html">Home</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./Gallery.html">Gallery</a>
+                        <a href="./Store Locator.html">Store Locator</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-column" aria-label="Collections">
+                    <h2 class="footer-column-title">Collections</h2>
+                    <div class="footer-column-links">
+                        <a href="./Menwatches.html">Men's Watches</a>
+                        <a href="./Womanwatches.html">Women's Watches</a>
+                        <a href="./Couplewatches.html">Couple Watches</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-column" aria-label="Customer care">
+                    <h2 class="footer-column-title">Customer Care</h2>
+                    <div class="footer-column-links">
+                        <a href="./Support.html">Support</a>
+                        <a href="./Contact.html">Contact Us</a>
+                        <a href="./Cart.html">Shopping Bag</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="footerYear"></span> WRISTERY. CRAFTED FOR TIMELESS ELEGANCE.
+                </p>
+                <p class="footer-note">Every second tells your story.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("footerYear").textContent = new Date().getFullYear();
+
+        const cartItems = document.getElementById("cartItems");
+        const cartView = document.getElementById("cartView");
+        const checkoutView = document.getElementById("checkoutView");
+        const cartSubtotal = document.getElementById("cartSubtotal");
+        const cartItemCount = document.getElementById("cartItemCount");
+        const summaryItemCount = document.getElementById("summaryItemCount");
+        const checkoutButton = document.getElementById("proceedToCheckout");
+        const checkoutLines = document.getElementById("checkoutOrderLines");
+        const checkoutTotal = document.getElementById("checkoutTotal");
+        const orderConfirmation = document.getElementById("orderConfirmation");
+        const orderForm = document.getElementById("orderForm");
+
+        function loadCart() {
+            try {
+                const storedCart = JSON.parse(localStorage.getItem("wristeryCart")) || [];
+                return Array.isArray(storedCart) ? storedCart : [];
+            } catch (error) {
+                return [];
+            }
+        }
+
+        let cart = loadCart();
+        const knownPrices = new Map([
+            ["Classic Gold Watch", 15000],
+            ["Black Luxury Watch", 18000],
+            ["Silver Classic Watch", 20000],
+            ["Luxury Gold Watch", 15000],
+            ["Black Premium Watch", 18000],
+            ["Silver Premium Watch", 20000],
+            ["Golden Classic Watch", 22000],
+            ["Elora", 45000],
+            ["Lagaila Muse Trio", 10000],
+            ["Midnight", 50000],
+            ["Aurora", 60000],
+            ["Diamond", 70000],
+            ["Octa", 90000]
+        ]);
+
+        function getItemPrice(item) {
+            if (typeof item.price === "number" && item.price >= 1) return item.price;
+            const priceMatch = String(item.price || "").replace(/,/g, "").match(/\d+(?:\.\d+)?/);
+            const parsedPrice = Number(priceMatch && priceMatch[0]);
+            if (Number.isFinite(parsedPrice) && parsedPrice >= 1) return parsedPrice;
+            return knownPrices.get(item.name) || 0;
+        }
+
+        let cartWasNormalized = false;
+        cart.forEach(function (item) {
+            const price = getItemPrice(item);
+            if (item.price !== price) {
+                item.price = price;
+                cartWasNormalized = true;
+            }
+        });
+        if (cartWasNormalized) {
+            localStorage.setItem("wristeryCart", JSON.stringify(cart));
+        }
+
+        function formatCurrency(amount) {
+            return "PKR " + Math.round(amount).toLocaleString("en-PK", { useGrouping: false });
+        }
+
+        function getCartTotal() {
+            return cart.reduce(function (total, item) {
+                return total + getItemPrice(item) * (Number(item.quantity) || 0);
+            }, 0);
+        }
+
+        function renderCheckoutReview() {
+            checkoutLines.replaceChildren();
+            cart.forEach(function (item) {
+                const quantity = Number(item.quantity) || 0;
+                const line = document.createElement("p");
+                line.textContent = (item.name || "Watch") + " × " + quantity + "  " +
+                    formatCurrency(getItemPrice(item) * quantity);
+                checkoutLines.appendChild(line);
+            });
+            checkoutTotal.textContent = formatCurrency(getCartTotal());
+        }
+
+        function renderCart() {
+            const quantityTotal = cart.reduce(function (total, item) {
+                return total + (Number(item.quantity) || 0);
+            }, 0);
+            cartItemCount.textContent = "(" + quantityTotal + ")";
+            summaryItemCount.textContent = quantityTotal;
+            cartItems.replaceChildren();
+
+            if (cart.length === 0) {
+                const empty = document.createElement("p");
+                empty.className = "empty-cart";
+                empty.textContent = "Your bag is empty. Explore the collections to find your next timepiece.";
+                cartItems.appendChild(empty);
+            }
+
+            cart.forEach(function (item, index) {
+                const quantity = Number(item.quantity) || 0;
+                const unitPrice = getItemPrice(item);
+                const row = document.createElement("article");
+                row.className = "cart-item";
+
+                const image = document.createElement("img");
+                image.src = item.image || "";
+                image.alt = item.name || "Watch";
+
+                const details = document.createElement("div");
+                details.className = "cart-item-details";
+                const name = document.createElement("h2");
+                name.textContent = item.name || "Watch";
+                const unit = document.createElement("p");
+                unit.className = "unit-price";
+                unit.textContent = formatCurrency(unitPrice) + " each";
+                const calculation = document.createElement("p");
+                calculation.className = "item-calculation";
+                calculation.textContent = formatCurrency(unitPrice) + " × " + quantity +
+                    " = " + formatCurrency(unitPrice * quantity);
+
+                const actions = document.createElement("div");
+                actions.className = "item-actions";
+                const quantityControl = document.createElement("div");
+                quantityControl.className = "quantity-control";
+                const decrease = document.createElement("button");
+                decrease.type = "button";
+                decrease.textContent = "−";
+                decrease.setAttribute("aria-label", "Decrease quantity of " + name.textContent);
+                decrease.addEventListener("click", function () {
+                    if (quantity <= 1) cart.splice(index, 1);
+                    else cart[index].quantity = quantity - 1;
+                    saveCart();
+                });
+                const quantityLabel = document.createElement("span");
+                quantityLabel.textContent = quantity;
+                const increase = document.createElement("button");
+                increase.type = "button";
+                increase.textContent = "+";
+                increase.setAttribute("aria-label", "Increase quantity of " + name.textContent);
+                increase.addEventListener("click", function () {
+                    cart[index].quantity = quantity + 1;
+                    saveCart();
+                });
+                quantityControl.append(decrease, quantityLabel, increase);
+
+                const remove = document.createElement("button");
+                remove.type = "button";
+                remove.className = "remove-item";
+                remove.textContent = "Remove";
+                remove.addEventListener("click", function () {
+                    cart.splice(index, 1);
+                    saveCart();
+                });
+
+                actions.append(quantityControl, remove);
+                details.append(name, unit, calculation, actions);
+                row.append(image, details);
+                cartItems.appendChild(row);
+            });
+
+            cartSubtotal.textContent = formatCurrency(getCartTotal());
+            checkoutButton.disabled = cart.length === 0;
+            renderCheckoutReview();
+        }
+
+        function saveCart() {
+            localStorage.setItem("wristeryCart", JSON.stringify(cart));
+            renderCart();
+        }
+
+        checkoutButton.addEventListener("click", function () {
+            if (cart.length === 0) return;
+            cartView.hidden = true;
+            checkoutView.hidden = false;
+            renderCheckoutReview();
+            document.getElementById("customerName").focus();
+        });
+
+        document.getElementById("backToCart").addEventListener("click", function () {
+            checkoutView.hidden = true;
+            cartView.hidden = false;
+        });
+
+        orderForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            if (!orderForm.reportValidity() || cart.length === 0) return;
+
+            const orderNumber = "WR-" + Date.now().toString().slice(-8);
+            const customerName = document.getElementById("customerName").value.trim();
+            const total = getCartTotal();
+            localStorage.setItem("wristeryLastOrder", JSON.stringify({
+                orderNumber: orderNumber,
+                customerName: customerName,
+                customerPhone: document.getElementById("customerPhone").value.trim(),
+                customerEmail: document.getElementById("customerEmail").value.trim(),
+                deliveryAddress: document.getElementById("deliveryAddress").value.trim(),
+                items: cart,
+                total: total,
+                createdAt: new Date().toISOString()
+            }));
+
+            document.getElementById("orderConfirmationMessage").textContent =
+                "Thank you, " + customerName + ". Order " + orderNumber +
+                " is confirmed for " + formatCurrency(total) + ".";
+            cart = [];
+            localStorage.setItem("wristeryCart", JSON.stringify(cart));
+            orderForm.reset();
+            checkoutView.hidden = true;
+            orderConfirmation.hidden = false;
+            renderCart();
+        });
+
+        window.addEventListener("storage", function (event) {
+            if (event.key === "wristeryCart") {
+                cart = loadCart();
+                renderCart();
+            }
+        });
+
+        renderCart();
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,957 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WRISTERY | Sign Up</title>
+    <link rel="icon" type="image/png" href="../Image/Logo.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- Signup CSS -->
+    <link rel="stylesheet" href="../Css/Signup.css">
+</head>
+
+<body>
+   
+<div class="announcement-bar">
+
+    <div class="announcement-track">
+
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+
+        <div class="announcement-group" aria-hidden="true">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+
+        <div class="announcement-group" aria-hidden="true">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+        <div class="announcement-group">
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+            <span>TIMELESS ELEGANCE. EXCEPTIONAL CRAFTSMANSHIP.</span>
+        </div>
+    </div>
+
+</div>
+    <!-- HEADER START -->
+    <header class="wristery-header">
+
+        <div class="header-container">
+
+            <!-- LEFT: MENU BUTTON -->
+            <div class="header-left">
+                <button class="menu-button"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#wristeryMenu"
+                    aria-controls="wristeryMenu"
+                    aria-label="Open navigation menu">
+
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+
+            <!-- CENTER: LOGO -->
+            <a href="" class="wristery-logo">
+                <img src="../Image/Logo.png"
+                    alt="WRISTERY Luxury Watches Logo">
+            </a>
+
+            <!-- RIGHT: ONLY ONE ACCOUNT ICON -->
+           
+<!-- RIGHT: HEADER ICONS -->
+<div class="header-icons">
+
+    <!-- SEARCH ICON - FIRST -->
+    <button class="header-icon"
+        type="button"
+        id="searchButton"
+        aria-label="Search"
+        title="Search">
+
+        <i class="bi bi-search"></i>
+    </button>
+
+    <!-- SIGNUP ICON - SECOND -->
+    <a href="signup.html"
+        class="header-icon active-account"
+        aria-label="Sign Up"
+        aria-current="page"
+        title="Sign Up">
+
+        <i class="bi bi-person"></i>
+    </a>
+
+    <!-- SHOPPING BAG - THIRD -->
+    <a href="./Cart.html" class="header-icon" aria-label="Shopping Bag" title="Shopping bag">
+
+        <i class="bi bi-bag"></i>
+        <span class="cart-count">0</span>
+    </a>
+
+</div>
+
+        </div>
+
+        <!-- SEARCH PANEL -->
+        <div class="search-panel" id="searchPanel" hidden>
+
+            <form class="search-form" id="searchForm">
+
+                <i class="bi bi-search"></i>
+
+                <input type="search"
+                    id="siteSearch"
+                    placeholder="Search luxury watches..."
+                    aria-label="Search luxury watches">
+
+                <button type="button"
+                    id="closeSearch"
+                    aria-label="Close search">
+
+                    <i class="bi bi-x-lg"></i>
+                </button>
+
+            </form>
+        </div>
+
+    </header>
+    <!-- HEADER END -->
+
+
+    <!-- SIDEBAR START -->
+    <div class="offcanvas offcanvas-start wristery-menu"
+        tabindex="-1"
+        id="wristeryMenu"
+        aria-labelledby="wristeryMenuLabel">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title" id="wristeryMenuLabel">
+                WRISTERY
+            </h5>
+
+            <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close menu">
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <p class="menu-subtitle">DISCOVER OUR WORLD</p>
+
+            <nav class="menu-links" aria-label="Main navigation">
+
+                <a href="index.html">
+                    <i class="bi bi-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="about.html">
+                    <i class="bi bi-info-circle"></i>
+                    <span>About</span>
+                </a>
+
+                <!-- CATEGORIES -->
+                <div class="category-menu">
+
+                    <button class="category-toggle"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#watchCategories"
+                        aria-expanded="false"
+                        aria-controls="watchCategories">
+
+                        <span class="category-label">
+                            <i class="bi bi-watch"></i>
+                            <span>Categories</span>
+                        </span>
+
+                        <i class="bi bi-chevron-down category-arrow"></i>
+                    </button>
+
+                    <div class="collapse" id="watchCategories">
+
+                        <div class="subcategory-links">
+
+                            <a href="./Menwatches.html">
+                                <b>Men Watches</b>
+                            </a>
+
+                            <a href="./Womanwatches.html">
+                                <b>Women Watches</b>
+                            </a>
+
+                            <a href="./Couplewatches.html">
+                                <b>Couple Watches</b>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <a href="./Gallery.html">
+                    <i class="bi bi-images"></i>
+                    <span>Gallery</span>
+                </a>
+
+                <a href="./Store Locator.html">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Store Locator</span>
+                </a>
+
+                <a href="./Support.html">
+                    <i class="bi bi-headset"></i>
+                    <span>Support</span>
+                </a>
+
+                <a href="./Contact.html">
+                    <i class="bi bi-envelope"></i>
+                    <span>Contact</span>
+                </a>
+
+            </nav>
+        </div>
+    </div>
+    <!-- SIDEBAR END -->
+
+    <aside class="offcanvas offcanvas-end shopping-bag" tabindex="-1"
+        id="shoppingBag" aria-labelledby="shoppingBagTitle">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="shoppingBagTitle">Your Bag</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close shopping bag"></button>
+        </div>
+        <div class="offcanvas-body">
+            <section class="shopping-bag-view" id="shoppingBagView">
+                <div class="shopping-bag-items" id="shoppingBagItems" aria-live="polite"></div>
+                <div class="shopping-bag-summary">
+                    <div class="shopping-bag-subtotal"><span>Subtotal</span><strong id="shoppingBagSubtotal">PKR 0</strong></div>
+                    <p>Shipping and taxes calculated at checkout.</p>
+                    <button class="checkout-button" id="proceedToCheckout" type="button" disabled>Proceed to checkout</button>
+                </div>
+            </section>
+            <section class="checkout-view" id="checkoutView" hidden>
+                <button class="checkout-back" id="backToBag" type="button"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to bag</button>
+                <form id="orderForm">
+                    <h3>Order details</h3>
+                    <label for="customerName">Full name</label>
+                    <input id="customerName" name="customerName" autocomplete="name" required>
+                    <label for="customerPhone">Phone number</label>
+                    <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" required>
+                    <label for="customerEmail">Email address</label>
+                    <input id="customerEmail" name="customerEmail" type="email" autocomplete="email" required>
+                    <label for="deliveryAddress">Delivery address</label>
+                    <textarea id="deliveryAddress" name="deliveryAddress" autocomplete="street-address" rows="3" required></textarea>
+                    <div class="checkout-review">
+                        <h4>Order total</h4>
+                        <div id="checkoutOrderLines"></div>
+                        <div class="shopping-bag-subtotal"><span>Total</span><strong id="checkoutTotal">PKR 0</strong></div>
+                    </div>
+                    <button class="checkout-button" type="submit">Confirm order</button>
+                </form>
+            </section>
+            <section class="order-confirmation" id="orderConfirmation" aria-live="polite" hidden>
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                <h3>Order confirmed</h3>
+                <p id="orderConfirmationMessage"></p>
+                <button class="checkout-button" type="button" data-bs-dismiss="offcanvas">Continue shopping</button>
+            </section>
+        </div>
+    </aside>
+
+
+    <!-- SIGNUP PAGE START -->
+    <main class="signup-page">
+
+        <div class="content">
+
+           
+<!-- LEFT: LUXURY WATCH IMAGE -->
+<section class="watch-side">
+
+    <img src="../Image/Men 08.jpeg"
+         alt="WRISTERY Luxury Watch"
+         class="signup-watch-image">
+
+</section>
+
+
+            <!-- RIGHT: SIGNUP FORM -->
+            <section class="form-side">
+
+                <div class="signup-card">
+
+                    <div class="heading">
+
+                        <i class="bi bi-person-plus-fill"></i>
+
+                        <h2>Create Account</h2>
+
+                        <p>Sign up to explore luxury</p>
+
+                    </div>
+
+                    <form id="signupForm">
+
+                        <!-- FULL NAME -->
+                        <div class="input-group-custom">
+
+                            <i class="bi bi-person"></i>
+
+                            <input type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Full Name"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="input-group-custom">
+
+                            <i class="bi bi-envelope"></i>
+
+                            <input type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Email Address"
+                                autocomplete="email"
+                                required>
+
+                        </div>
+
+                        <!-- PASSWORD -->
+                        <div class="input-group-custom">
+
+                            <i class="bi bi-lock"></i>
+
+                            <input type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Password"
+                                minlength="8"
+                                autocomplete="new-password"
+                                required>
+
+                            <button type="button"
+                                class="eye-btn"
+                                data-target="password"
+                                aria-label="Show password">
+
+                                <i class="bi bi-eye"></i>
+                            </button>
+
+                        </div>
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="input-group-custom">
+
+                            <i class="bi bi-lock-fill"></i>
+
+                            <input type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm Password"
+                                autocomplete="new-password"
+                                required>
+
+                            <button type="button"
+                                class="eye-btn"
+                                data-target="confirmPassword"
+                                aria-label="Show confirm password">
+
+                                <i class="bi bi-eye"></i>
+                            </button>
+
+                        </div>
+
+                        <!-- TERMS AND CONDITIONS -->
+                        <div class="terms">
+
+                            <input type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required>
+
+                            <label for="terms">
+
+                                I agree to the
+
+                                <a href="terms.html">
+                                    Terms &amp; Conditions
+                                </a>
+
+                                and
+
+                                <a href="privacy.html">
+                                    Privacy Policy
+                                </a>
+
+                            </label>
+                        </div>
+
+                        <!-- SIGNUP BUTTON -->
+                        <button type="submit" class="signup-btn">
+
+                            <i class="bi bi-person-plus"></i>
+
+                            Sign Up
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+                        <p id="formStatus"
+                            role="status"
+                            aria-live="polite">
+                        </p>
+
+                        <!-- DIVIDER -->
+                        <div class="divider">
+                            <span>OR</span>
+                        </div>
+
+                        <!-- GOOGLE BUTTON -->
+                        <button type="button"
+                            class="social-btn"
+                            id="googleSignup">
+
+                            <i class="bi bi-google"></i>
+
+                            Continue with Google
+
+                        </button>
+
+                    </form>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <!-- SIGNUP PAGE END -->
+     
+    <!-- Footer -->
+    <footer class="wristery-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="./Index.html" class="footer-logo">WRISTERY</a>
+                    <p class="footer-tagline">TIMELESS STYLE. A LEGACY ON YOUR WRIST.</p>
+                    <p class="footer-description">
+                        More than a watch, it's a statement of who you are.
+                        Discover timeless designs crafted for those who value
+                        elegance, confidence, and distinction.
+                    </p>
+                </div>
+
+                <nav class="footer-column" aria-label="Explore">
+                    <h2 class="footer-column-title">Explore</h2>
+                    <div class="footer-column-links">
+                        <a href="./Index.html">Home</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./Gallery.html">Gallery</a>
+                        <a href="./Store Locator.html">Store Locator</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-column" aria-label="Collections">
+                    <h2 class="footer-column-title">Collections</h2>
+                    <div class="footer-column-links">
+                        <a href="./Menwatches.html">Men's Watches</a>
+                        <a href="./Womanwatches.html">Women's Watches</a>
+                        <a href="./Couplewatches.html">Couple Watches</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-column" aria-label="Customer care">
+                    <h2 class="footer-column-title">Customer Care</h2>
+                    <div class="footer-column-links">
+                        <a href="./Support.html">Support</a>
+                        <a href="./Contact.html">Contact Us</a>
+                        <a href="./Cart.html">Shopping Bag</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="year"></span> WRISTERY. CRAFTED FOR TIMELESS ELEGANCE.
+                </p>
+                <p class="footer-note">Every second tells your story.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SIGNUP JAVASCRIPT -->
+    <script src="../Js/signup.js"></script>
+
+    <!-- SEARCH JAVASCRIPT -->
+   
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    // =====================================
+    // WRISTERY SEARCH SYSTEM
+    // =====================================
+
+    const searchButton = document.getElementById("searchButton");
+    const searchPanel = document.getElementById("searchPanel");
+    const closeSearch = document.getElementById("closeSearch");
+    const siteSearch = document.getElementById("siteSearch");
+    const searchForm = document.getElementById("searchForm");
+
+    if (searchButton && searchPanel && closeSearch && siteSearch && searchForm) {
+
+        searchButton.addEventListener("click", function () {
+
+            searchPanel.hidden = !searchPanel.hidden;
+
+            if (!searchPanel.hidden) {
+                siteSearch.focus();
+            }
+
+        });
+
+        closeSearch.addEventListener("click", function () {
+
+            searchPanel.hidden = true;
+            searchButton.focus();
+
+        });
+
+        searchForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const query = siteSearch.value.trim();
+
+            if (query) {
+                window.location.href =
+                    "index.html?search=" + encodeURIComponent(query);
+            }
+
+        });
+
+    }
+
+
+    // =====================================
+    // WRISTERY SIGNUP SYSTEM
+    // =====================================
+
+    const signupForm = document.getElementById("signupForm");
+
+    if (signupForm) {
+
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const confirmPassword = document.getElementById("confirmPassword");
+        const formStatus = document.getElementById("formStatus");
+
+
+        signupForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const userEmail = email.value.trim().toLowerCase();
+
+            // GET REGISTERED EMAILS
+
+            let registeredEmails = [];
+
+            try {
+
+                registeredEmails = JSON.parse(
+                    localStorage.getItem("wristeryRegisteredEmails") || "[]"
+                );
+
+                if (!Array.isArray(registeredEmails)) {
+                    registeredEmails = [];
+                }
+
+            } catch (error) {
+
+                registeredEmails = [];
+
+            }
+
+
+            // CHECK DUPLICATE EMAIL
+
+            if (registeredEmails.includes(userEmail)) {
+
+                alert(
+                    "This Gmail is already registered!\n\nPlease login to your WRISTERY account."
+                );
+
+                formStatus.textContent =
+                    "This email is already registered. Please login.";
+
+                formStatus.style.color = "#4A1424";
+
+                email.focus();
+
+                return;
+
+            }
+
+
+            // CHECK PASSWORD MATCH
+
+            if (password.value !== confirmPassword.value) {
+
+                alert("Passwords do not match! Please try again.");
+
+                confirmPassword.focus();
+
+                return;
+
+            }
+
+
+            // SAVE EMAIL
+
+            registeredEmails.push(userEmail);
+
+            localStorage.setItem(
+                "wristeryRegisteredEmails",
+                JSON.stringify(registeredEmails)
+            );
+
+
+            // SUCCESS MESSAGE
+
+            alert(
+                "Your account has been created successfully!\n\nWelcome to WRISTERY."
+            );
+
+            formStatus.textContent =
+                "Your account has been created successfully!";
+
+            formStatus.style.color = "#4A1424";
+
+
+            // CLEAR FORM
+
+            signupForm.reset();
+
+        });
+
+
+        // =====================================
+        // SHOW / HIDE PASSWORD
+        // =====================================
+
+        const eyeButtons = document.querySelectorAll(".eye-btn");
+
+        eyeButtons.forEach(function (button) {
+
+            button.addEventListener("click", function () {
+
+                const targetId = button.getAttribute("data-target");
+
+                const input = document.getElementById(targetId);
+
+                const icon = button.querySelector("i");
+
+                if (!input || !icon) return;
+
+                if (input.type === "password") {
+
+                    input.type = "text";
+
+                    icon.classList.replace("bi-eye", "bi-eye-slash");
+
+                } else {
+
+                    input.type = "password";
+
+                    icon.classList.replace("bi-eye-slash", "bi-eye");
+
+                }
+
+            });
+
+        });
+
+    }
+
+
+    // =====================================
+    // FOOTER CURRENT YEAR
+    // =====================================
+
+    const year = document.getElementById("year");
+
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+
+
+    const bagItems = document.getElementById("shoppingBagItems");
+    const bagSubtotal = document.getElementById("shoppingBagSubtotal");
+    const checkoutButton = document.getElementById("proceedToCheckout");
+    const bagView = document.getElementById("shoppingBagView");
+    const checkoutView = document.getElementById("checkoutView");
+    const checkoutLines = document.getElementById("checkoutOrderLines");
+    const checkoutTotal = document.getElementById("checkoutTotal");
+    const orderForm = document.getElementById("orderForm");
+    const orderConfirmation = document.getElementById("orderConfirmation");
+
+    function loadCart() {
+        try {
+            const savedCart = JSON.parse(localStorage.getItem("wristeryCart")) || [];
+            return Array.isArray(savedCart) ? savedCart : [];
+        } catch (error) {
+            return [];
+        }
+    }
+
+    let cart = loadCart();
+
+    function getItemPrice(item) {
+        if (typeof item.price === "number") return item.price;
+        const priceMatch = String(item.price || "").replace(/,/g, "").match(/\d+(?:\.\d+)?/);
+        const parsedPrice = Number(priceMatch && priceMatch[0]);
+        return Number.isFinite(parsedPrice) ? parsedPrice : 0;
+    }
+
+    function formatCurrency(amount) {
+        return "PKR " + Math.round(amount).toLocaleString("en-PK", { useGrouping: false });
+    }
+
+    function getCartTotal() {
+        return cart.reduce(function (total, item) {
+            return total + getItemPrice(item) * (Number(item.quantity) || 0);
+        }, 0);
+    }
+
+    function renderCheckoutReview() {
+        checkoutLines.replaceChildren();
+        cart.forEach(function (item) {
+            const quantity = Number(item.quantity) || 0;
+            const line = document.createElement("p");
+            line.textContent = (item.name || "Watch") + " × " + quantity + "  " +
+                formatCurrency(getItemPrice(item) * quantity);
+            checkoutLines.appendChild(line);
+        });
+        checkoutTotal.textContent = formatCurrency(getCartTotal());
+    }
+
+    function renderCart() {
+        const count = cart.reduce(function (total, item) {
+            return total + (Number(item.quantity) || 0);
+        }, 0);
+        document.querySelectorAll(".cart-count").forEach(function (badge) {
+            badge.textContent = count;
+        });
+
+        bagItems.replaceChildren();
+        if (cart.length === 0) {
+            const emptyMessage = document.createElement("p");
+            emptyMessage.className = "shopping-bag-empty";
+            emptyMessage.textContent = "Your bag is empty.";
+            bagItems.appendChild(emptyMessage);
+        }
+
+        cart.forEach(function (item, index) {
+            const quantity = Number(item.quantity) || 0;
+            const unitPrice = getItemPrice(item);
+            const lineTotal = unitPrice * quantity;
+            const row = document.createElement("article");
+            row.className = "shopping-bag-item";
+
+            const image = document.createElement("img");
+            image.src = item.image || "";
+            image.alt = item.name || "Watch";
+            const details = document.createElement("div");
+            details.className = "shopping-bag-item-details";
+            const name = document.createElement("h3");
+            name.textContent = item.name || "Watch";
+            const price = document.createElement("p");
+            price.textContent = formatCurrency(unitPrice) + " each";
+            const calculation = document.createElement("p");
+            calculation.className = "shopping-bag-line-total";
+            calculation.textContent = formatCurrency(unitPrice) + " × " + quantity +
+                " = " + formatCurrency(lineTotal);
+
+            const controls = document.createElement("div");
+            controls.className = "shopping-bag-quantity";
+            const decrease = document.createElement("button");
+            decrease.type = "button";
+            decrease.textContent = "−";
+            decrease.setAttribute("aria-label", "Decrease quantity of " + name.textContent);
+            decrease.addEventListener("click", function () {
+                if (quantity <= 1) cart.splice(index, 1);
+                else cart[index].quantity = quantity - 1;
+                saveCart();
+            });
+
+            const quantityText = document.createElement("span");
+            quantityText.textContent = quantity;
+            const increase = document.createElement("button");
+            increase.type = "button";
+            increase.textContent = "+";
+            increase.setAttribute("aria-label", "Increase quantity of " + name.textContent);
+            increase.addEventListener("click", function () {
+                cart[index].quantity = quantity + 1;
+                saveCart();
+            });
+
+            const remove = document.createElement("button");
+            remove.type = "button";
+            remove.className = "shopping-bag-remove";
+            remove.textContent = "Remove";
+            remove.addEventListener("click", function () {
+                cart.splice(index, 1);
+                saveCart();
+            });
+
+            controls.append(decrease, quantityText, increase, remove);
+            details.append(name, price, calculation, controls);
+            row.append(image, details);
+            bagItems.appendChild(row);
+        });
+
+        bagSubtotal.textContent = formatCurrency(getCartTotal());
+        checkoutButton.disabled = cart.length === 0;
+        renderCheckoutReview();
+    }
+
+    function saveCart() {
+        localStorage.setItem("wristeryCart", JSON.stringify(cart));
+        renderCart();
+    }
+
+    checkoutButton.addEventListener("click", function () {
+        if (cart.length === 0) return;
+        bagView.hidden = true;
+        checkoutView.hidden = false;
+        orderConfirmation.hidden = true;
+        renderCheckoutReview();
+        document.getElementById("customerName").focus();
+    });
+
+    document.getElementById("backToBag").addEventListener("click", function () {
+        checkoutView.hidden = true;
+        bagView.hidden = false;
+    });
+
+    orderForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (!orderForm.reportValidity() || cart.length === 0) return;
+
+        const orderNumber = "WR-" + Date.now().toString().slice(-8);
+        const customerName = document.getElementById("customerName").value.trim();
+        const total = getCartTotal();
+        localStorage.setItem("wristeryLastOrder", JSON.stringify({
+            orderNumber: orderNumber,
+            customerName: customerName,
+            customerPhone: document.getElementById("customerPhone").value.trim(),
+            customerEmail: document.getElementById("customerEmail").value.trim(),
+            deliveryAddress: document.getElementById("deliveryAddress").value.trim(),
+            items: cart,
+            total: total,
+            createdAt: new Date().toISOString()
+        }));
+
+        document.getElementById("orderConfirmationMessage").textContent =
+            "Thank you, " + customerName + ". Order " + orderNumber +
+            " is confirmed for " + formatCurrency(total) + ".";
+        cart = [];
+        saveCart();
+        orderForm.reset();
+        bagView.hidden = true;
+        checkoutView.hidden = true;
+        orderConfirmation.hidden = false;
+    });
+
+    document.getElementById("shoppingBag").addEventListener("hidden.bs.offcanvas", function () {
+        bagView.hidden = false;
+        checkoutView.hidden = true;
+        orderConfirmation.hidden = true;
+    });
+
+    window.addEventListener("storage", function (event) {
+        if (event.key === "wristeryCart") {
+            cart = loadCart();
+            renderCart();
+        }
+    });
+
+    renderCart();
+
+
+    // =====================================
+    // SIGNUP SIDEBAR ADJUSTMENT
+    // =====================================
+
+    const signupMenu = document.getElementById("wristeryMenu");
+
+    if (signupMenu) {
+
+        signupMenu.addEventListener("show.bs.offcanvas", function () {
+
+            if (window.innerWidth > 768) {
+                document.body.classList.add("sidebar-open");
+            }
+
+        });
+
+        signupMenu.addEventListener("hidden.bs.offcanvas", function () {
+
+            document.body.classList.remove("sidebar-open");
+
+        });
+
+        window.addEventListener("resize", function () {
+
+            if (window.innerWidth <= 768) {
+                document.body.classList.remove("sidebar-open");
+            }
+
+        });
+
+    }
+
+});
+</script>
+
+
+</body>
+</html>
